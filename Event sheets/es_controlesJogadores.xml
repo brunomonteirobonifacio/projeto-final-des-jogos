@@ -3,63 +3,58 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>es_controlesJogadores</name>
     <events>
-        <event-block sid="591988295038111">
-            <conditions>
-                <condition id="-11" name="For Each" sid="978333503324906" type="System">
-                    <param id="0" name="Object">colisaoJogador</param>
-                </condition>
-            </conditions>
-            <actions />
+        <comment>As event sheets de todas as fases devem incluir essa no início, para que seja necessário alterar as movimentações dos personagens jogáveis só aqui e as event sheets das fases conterão apenas a lógica do spawn das armas, etc</comment>
+        <comment>As teclas que ativam cada controle estão em colisaoJogador1 e colisaoJogador2, com os mesmos nomes que nos eventos abaixo</comment>
+        <comment>É usado o KeyCode ao invés de Key porque assim podem ser usadas variáveis ao invés de apenas valores fixos. Isso facilita também para criação de configurações que alterem os controles</comment>
+        <event-group description="" sid="339431123013254" title="Controles Jogadores">
             <sub-events>
-                <event-block sid="417835165943708">
+                <event-block sid="591988295038111">
                     <conditions>
-                        <condition id="5" name="Key code is down" sid="337391883766083" type="Keyboard">
-                            <param id="0" name="Keycode">colisaoJogador.jumpKeyCode</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="261373620543195" type="colisaoJogador">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="373905030947881">
-                    <conditions>
-                        <condition id="5" name="Key code is down" sid="565087291448784" type="Keyboard">
-                            <param id="0" name="Keycode">colisaoJogador.moveRightKeyCode</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="451889756847878" type="colisaoJogador">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="472738180844980">
-                    <conditions>
-                        <condition id="5" name="Key code is down" sid="196199305379875" type="Keyboard">
-                            <param id="0" name="Keycode">colisaoJogador.moveLeftKeyCode</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="208121974548013" type="colisaoJogador">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="978977084454423">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="769515619441119" type="colisaoJogador">
+                        <condition id="-11" name="For Each" sid="978333503324906" type="System">
                             <param id="0" name="Object">colisaoJogador</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="Platform" id="8" name="Set vector X" sid="827864441062269" type="colisaoJogador">
-                            <param id="0" name="Vector X">200</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="417835165943708">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="337391883766083" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador.jumpKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="261373620543195" type="colisaoJogador">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="373905030947881">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="565087291448784" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador.moveRightKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="451889756847878" type="colisaoJogador">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="472738180844980">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="196199305379875" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador.moveLeftKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="208121974548013" type="colisaoJogador">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>
