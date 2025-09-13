@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>3cyf8zt8vzh77</unique-id>
-    <saved-with-version>24400</saved-with-version>
+    <saved-with-version>28000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -83,6 +83,9 @@
             </members>
             <instance-variables>
                 <instance-variable name="vida" sid="835471422924593" type="number" />
+                <instance-variable name="moveRightKeyCode" sid="415056060409810" type="number" />
+                <instance-variable name="moveLeftKeyCode" sid="560314267661477" type="number" />
+                <instance-variable name="jumpKeyCode" sid="398658433049678" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">
@@ -95,6 +98,7 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
+        <event-sheet>es_controlesJogadores.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>

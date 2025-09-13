@@ -77,6 +77,9 @@
                     </properties>
                     <instance-variables>
                         <vida>5</vida>
+                        <moveRightKeyCode>68</moveRightKeyCode>
+                        <moveLeftKeyCode>65</moveLeftKeyCode>
+                        <jumpKeyCode>87</jumpKeyCode>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -118,6 +121,9 @@
                     </properties>
                     <instance-variables>
                         <vida>5</vida>
+                        <moveRightKeyCode>39</moveRightKeyCode>
+                        <moveLeftKeyCode>37</moveLeftKeyCode>
+                        <jumpKeyCode>38</jumpKeyCode>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
