@@ -87,6 +87,43 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="personagemJogavel1" sid="869215505711129">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="209173686246099">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860650448718406" speed="5">
+                    <frame duration="1" hotspotX="-0.0185185" hotspotY="-0.0925926" original-source="C:\Users\roger\OneDrive\Documents\Jogos Des\projeto-final-des-jogos\Assets\Fighter sprites\fighter_Idle_0001.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="personagemJogavel2" sid="542486191547294">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="253271043997603">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304806664432797" speed="5">
+                    <frame duration="1" hotspotX="0.490741" hotspotY="0.246988" original-source="C:\Users\roger\OneDrive\Documents\Jogos Des\projeto-final-des-jogos\Assets\Fighter sprites\fighter_Idle_0002.png">
+                        <collision-poly>
+                            <point x="0.981481" y="0.246988" />
+                            <point x="0.87963" y="0.5" />
+                            <point x="0.490741" y="0.813253" />
+                            <point x="0.111111" y="0.493976" />
+                            <point x="0.0277778" y="0.246988" />
+                            <point x="0.212963" y="0.0662651" />
+                            <point x="0.490741" y="0.0060241" />
+                            <point x="0.777778" y="0.060241" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="colisaoJogador" plugin-id="Sprite" sid="882947211568261">

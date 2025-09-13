@@ -8,6 +8,21 @@
         <comment>É usado o KeyCode ao invés de Key porque assim podem ser usadas variáveis ao invés de apenas valores fixos. Isso facilita também para criação de configurações que alterem os controles</comment>
         <event-group description="" sid="339431123013254" title="Controles Jogadores">
             <sub-events>
+                <event-block sid="600751200711066">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="208838011290360" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="678565568772232" type="personagemJogavel1">
+                            <param id="0" name="Pin to">colisaoJogador1</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="555203773600908" type="personagemJogavel2">
+                            <param id="0" name="Pin to">colisaoJogador2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="591988295038111">
                     <conditions>
                         <condition id="-11" name="For Each" sid="978333503324906" type="System">
