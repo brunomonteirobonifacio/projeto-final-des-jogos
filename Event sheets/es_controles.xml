@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>es_controlesJogadores</name>
+    <name>es_controles</name>
     <events>
         <comment>As event sheets de todas as fases devem incluir essa no início, para que seja necessário alterar as movimentações dos personagens jogáveis só aqui e as event sheets das fases conterão apenas a lógica do spawn das armas, etc</comment>
         <comment>As teclas que ativam cada controle estão em colisaoJogador1 e colisaoJogador2, com os mesmos nomes que nos eventos abaixo</comment>
@@ -52,6 +52,36 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-group description="" sid="286991704295405" title="Armas">
+                            <sub-events>
+                                <event-block sid="631262189362701">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="388935752028054" type="colisaoJogador">
+                                            <param id="0" name="Object">colisaoArma</param>
+                                        </condition>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="732340870420381" type="colisaoArma">
+                                            <param id="0" name="Instance variable">held</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-14" name="Toggle boolean" sid="153687042602918" type="colisaoArma">
+                                            <param id="0" name="Instance variable">held</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="681431172528752" type="colisaoArma">
+                                            <param id="0" name="Angle">0</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="341989444277200" type="colisaoArma">
+                                            <param id="0" name="X">colisaoJogador.ImagePointX(&quot;PosicaoArma&quot;)</param>
+                                            <param id="1" name="Y">colisaoJogador.ImagePointY(&quot;PosicaoArma&quot;)</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="557909673507214" type="colisaoArma">
+                                            <param id="0" name="Pin to">colisaoJogador</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                     </sub-events>
                 </event-block>
             </sub-events>

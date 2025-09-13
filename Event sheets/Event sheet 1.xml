@@ -3,6 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <include>es_controlesJogadores</include>
+        <include>es_controles</include>
     </events>
 </c2eventsheet>

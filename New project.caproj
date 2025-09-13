@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>3cyf8zt8vzh77</unique-id>
-    <saved-with-version>28000</saved-with-version>
+    <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -16,6 +16,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -60,7 +61,9 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379136427678212" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="PosicaoArma" x="1.25" y="0.375" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -71,6 +74,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="397578734586579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="PosicaoArma" x="1.25" y="0.375" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="colisaoEspada" sid="555142041567755">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462750680454914" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" />
                 </animation>
             </animation-folder>
@@ -87,6 +100,7 @@
                 <instance-variable name="moveRightKeyCode" sid="415056060409810" type="number" />
                 <instance-variable name="moveLeftKeyCode" sid="560314267661477" type="number" />
                 <instance-variable name="jumpKeyCode" sid="398658433049678" type="number" />
+                <instance-variable name="punchKeyCode" sid="243464073727872" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">
@@ -97,12 +111,25 @@
                 </behavior-type>
             </behaviors>
         </family>
+        <family name="colisaoArma" plugin-id="Sprite" sid="213894026541585">
+            <members>
+                <member>colisaoEspada</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="held" sid="134608163219496" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="126244336368465">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </family>
     </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>es_controlesJogadores.xml</event-sheet>
+        <event-sheet>es_controles.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
