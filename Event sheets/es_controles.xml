@@ -8,21 +8,6 @@
         <comment>É usado o KeyCode ao invés de Key porque assim podem ser usadas variáveis ao invés de apenas valores fixos. Isso facilita também para criação de configurações que alterem os controles</comment>
         <event-group description="" sid="339431123013254" title="Controles Jogadores">
             <sub-events>
-                <event-block sid="600751200711066">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="208838011290360" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="678565568772232" type="personagemJogavel1">
-                            <param id="0" name="Pin to">colisaoJogador1</param>
-                            <param id="1" name="Mode">0</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="555203773600908" type="personagemJogavel2">
-                            <param id="0" name="Pin to">colisaoJogador2</param>
-                            <param id="1" name="Mode">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="591988295038111">
                     <conditions>
                         <condition id="-11" name="For Each" sid="978333503324906" type="System">
@@ -110,6 +95,73 @@
                             </sub-events>
                         </event-group>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="121797552578729" title="Sprites Jogadores">
+            <sub-events>
+                <event-block sid="600751200711066">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="208838011290360" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="678565568772232" type="personagemJogavel1">
+                            <param id="0" name="Pin to">colisaoJogador1</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="555203773600908" type="personagemJogavel2">
+                            <param id="0" name="Pin to">colisaoJogador2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="679204902748525">
+                    <conditions>
+                        <condition id="5" name="Key code is down" sid="792612690305377" type="Keyboard">
+                            <param id="0" name="Keycode">colisaoJogador1.moveRightKeyCode</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="894063579787205" type="personagemJogavel1">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="629492720550274">
+                    <conditions>
+                        <condition id="5" name="Key code is down" sid="764109050376179" type="Keyboard">
+                            <param id="0" name="Keycode">colisaoJogador1.moveLeftKeyCode</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="746937150600253" type="personagemJogavel1">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="747911907391602">
+                    <conditions>
+                        <condition id="5" name="Key code is down" sid="870485750508137" type="Keyboard">
+                            <param id="0" name="Keycode">colisaoJogador2.moveRightKeyCode</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="298859591473345" type="personagemJogavel2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="299622208128573">
+                    <conditions>
+                        <condition id="5" name="Key code is down" sid="976392628435527" type="Keyboard">
+                            <param id="0" name="Keycode">colisaoJogador2.moveLeftKeyCode</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="863771121346257" type="personagemJogavel2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
