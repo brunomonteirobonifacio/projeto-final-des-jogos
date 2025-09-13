@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>es_controles</name>
     <events>
-        <comment>As event sheets de todas as fases devem incluir essa no início, para que seja necessário alterar as movimentações dos personagens jogáveis só aqui e as event sheets das fases conterão apenas a lógica do spawn das armas, etc</comment>
+        <comment>As event sheets de todas as fases devem incluir essa no início, para que seja necessário alterar as movimentações dos personagens jogáveis e o comportamento das armas só aqui e as event sheets das fases conterão apenas a lógica do spawn das armas, etc</comment>
         <comment>As teclas que ativam cada controle estão em colisaoJogador1 e colisaoJogador2, com os mesmos nomes que nos eventos abaixo</comment>
         <comment>É usado o KeyCode ao invés de Key porque assim podem ser usadas variáveis ao invés de apenas valores fixos. Isso facilita também para criação de configurações que alterem os controles</comment>
         <event-group description="" sid="339431123013254" title="Controles Jogadores">
@@ -48,6 +48,18 @@
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="7" name="Simulate control" sid="208121974548013" type="colisaoJogador">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="528334875087971">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="645499407004749" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador.punchKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="763091879821349" type="colisaoJogador">
                                     <param id="0" name="Control">0</param>
                                 </action>
                             </actions>

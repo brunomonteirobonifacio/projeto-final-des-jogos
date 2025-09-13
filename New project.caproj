@@ -15,7 +15,6 @@
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -105,9 +104,6 @@
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">
                     <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="502050242141543">
-                    <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
         </family>
