@@ -100,6 +100,7 @@
                         <moveLeftKeyCode>65</moveLeftKeyCode>
                         <jumpKeyCode>87</jumpKeyCode>
                         <punchKeyCode>83</punchKeyCode>
+                        <pickupKeyCode>69</pickupKeyCode>
                         <armaAtual>desarmado</armaAtual>
                         <atacando>false</atacando>
                     </instance-variables>
@@ -147,6 +148,7 @@
                         <moveLeftKeyCode>37</moveLeftKeyCode>
                         <jumpKeyCode>38</jumpKeyCode>
                         <punchKeyCode>0</punchKeyCode>
+                        <pickupKeyCode>97</pickupKeyCode>
                         <armaAtual>desarmado</armaAtual>
                         <atacando>false</atacando>
                     </instance-variables>
@@ -201,7 +203,7 @@
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
@@ -252,6 +254,56 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="E" uid="9">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <keyCode>69</keyCode>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>288</y>
+                        <z>0</z>
+                        <width>19</width>
+                        <height>21</height>
+                        <depth>0</depth>
+                        <hotspotX>0.526315808</hotspotX>
+                        <hotspotY>0.523809552</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UM" uid="8">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <keyCode>97</keyCode>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
+                        <y>288</y>
+                        <z>0</z>
+                        <width>19</width>
+                        <height>21</height>
+                        <depth>0</depth>
+                        <hotspotX>0.526315808</hotspotX>
+                        <hotspotY>0.523809552</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
