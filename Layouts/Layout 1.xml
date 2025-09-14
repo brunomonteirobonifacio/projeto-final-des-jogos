@@ -104,6 +104,7 @@
                         <armaAtual>desarmado</armaAtual>
                         <atacando>false</atacando>
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
+                        <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -148,11 +149,12 @@
                         <moveRightKeyCode>39</moveRightKeyCode>
                         <moveLeftKeyCode>37</moveLeftKeyCode>
                         <jumpKeyCode>38</jumpKeyCode>
-                        <punchKeyCode>0</punchKeyCode>
+                        <punchKeyCode>40</punchKeyCode>
                         <pickupKeyCode>97</pickupKeyCode>
                         <armaAtual>desarmado</armaAtual>
                         <atacando>false</atacando>
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
+                        <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -195,6 +197,7 @@
                     <instance-variables>
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
+                        <distanciaHorizontalColisaoArma>100</distanciaHorizontalColisaoArma>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -249,14 +252,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
-                        <y>412</y>
+                        <x>705.399414063</x>
+                        <y>462.849365234</y>
                         <z>0</z>
                         <width>64</width>
                         <height>98.314002991</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -307,6 +310,88 @@
                         <depth>0</depth>
                         <hotspotX>0.526315808</hotspotX>
                         <hotspotY>0.523809552</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="colisaoArma" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <jogadorSegurandoUID>0</jogadorSegurandoUID>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>224</x>
+                        <y>-32</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="coletavelEspada" uid="11">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <tipoArma>espada</tipoArma>
+                        <durabilidade>3</durabilidade>
+                        <distanciaHorizontalColisaoArma>100</distanciaHorizontalColisaoArma>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>530.526428223</x>
+                        <y>457.466003418</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="desarmado" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <tipoArma>desarmado</tipoArma>
+                        <durabilidade>0</durabilidade>
+                        <distanciaHorizontalColisaoArma>32</distanciaHorizontalColisaoArma>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
+                        <y>-64</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
