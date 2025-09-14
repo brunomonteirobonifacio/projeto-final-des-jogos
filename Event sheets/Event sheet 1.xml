@@ -22,19 +22,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="859059544185529">
-            <conditions>
-                <condition id="1" name="On any key pressed" sid="751635159885878" type="Keyboard" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="754034078335761">
-                    <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="748450363492110" type="System" />
-                    </conditions>
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-block>
     </events>
 </c2eventsheet>
