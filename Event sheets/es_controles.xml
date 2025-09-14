@@ -71,25 +71,13 @@
                                         <condition id="0" name="On collision with another object" sid="388935752028054" type="colisaoJogador">
                                             <param id="0" name="Object">colisaoArma</param>
                                         </condition>
-                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="732340870420381" type="colisaoArma">
-                                            <param id="0" name="Instance variable">held</param>
-                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-14" name="Toggle boolean" sid="153687042602918" type="colisaoArma">
-                                            <param id="0" name="Instance variable">held</param>
+                                        <action id="-10" name="Set value" sid="793588525378913" type="colisaoJogador">
+                                            <param id="0" name="Instance variable">armaAtual</param>
+                                            <param id="1" name="Value">colisaoArma.tipoArma</param>
                                         </action>
-                                        <action id="-8" name="Set angle" sid="681431172528752" type="colisaoArma">
-                                            <param id="0" name="Angle">0</param>
-                                        </action>
-                                        <action id="-3" name="Set position" sid="341989444277200" type="colisaoArma">
-                                            <param id="0" name="X">colisaoJogador.ImagePointX(&quot;PosicaoArma&quot;)</param>
-                                            <param id="1" name="Y">colisaoJogador.ImagePointY(&quot;PosicaoArma&quot;)</param>
-                                        </action>
-                                        <action behavior="Pin" id="0" name="Pin to object" sid="557909673507214" type="colisaoArma">
-                                            <param id="0" name="Pin to">colisaoJogador</param>
-                                            <param id="1" name="Mode">0</param>
-                                        </action>
+                                        <action id="-9" name="Destroy" sid="422644796179647" type="colisaoArma" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -109,7 +97,7 @@
                             <param id="0" name="Pin to">colisaoJogador1</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="555203773600908" type="personagemJogavel2">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="921674047281217" type="personagemJogavel2">
                             <param id="0" name="Pin to">colisaoJogador2</param>
                             <param id="1" name="Mode">0</param>
                         </action>
@@ -146,7 +134,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="298859591473345" type="personagemJogavel2">
+                        <action id="7" name="Set mirrored" sid="845896540544962" type="personagemJogavel2">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
@@ -158,8 +146,52 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="863771121346257" type="personagemJogavel2">
+                        <action id="7" name="Set mirrored" sid="631123848952403" type="personagemJogavel2">
                             <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="800258978652948">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="437514180852433" type="colisaoJogador1" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="727604204535379" type="personagemJogavel1">
+                            <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_andando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="740942602809453">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="327173080971089" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="472155723762509" type="personagemJogavel1">
+                            <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="113177425641972">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="289100589400920" type="colisaoJogador2" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="835386811816986" type="personagemJogavel2">
+                            <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_andando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="922840783757506">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="853674617215745" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="886722937814865" type="personagemJogavel2">
+                            <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_parado&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>

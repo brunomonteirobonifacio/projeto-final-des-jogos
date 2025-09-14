@@ -95,30 +95,395 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860650448718406" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\roger\OneDrive\Documents\Jogos Des\projeto-final-des-jogos\Assets\Fighter sprites\fighter_Idle_0001.png" />
+                <animation framecount="8" loop="1" name="desarmado_parado" pingpong="0" repeatcount="1" repeatto="0" sid="860650448718406" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0001.png">
+                        <collision-poly>
+                            <point x="0" y="0.0449438" />
+                            <point x="1" y="0.0449438" />
+                            <point x="1" y="0.955056" />
+                            <point x="0" y="0.955056" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0002.png">
+                        <collision-poly>
+                            <point x="0" y="0.0337079" />
+                            <point x="1" y="0.0337079" />
+                            <point x="1" y="0.966292" />
+                            <point x="0" y="0.966292" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0003.png">
+                        <collision-poly>
+                            <point x="0" y="0.0224719" />
+                            <point x="1" y="0.0224719" />
+                            <point x="1" y="0.977528" />
+                            <point x="0" y="0.977528" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0004.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.0280899" />
+                            <point x="1" y="0.0280899" />
+                            <point x="1" y="0.97191" />
+                            <point x="0.00925926" y="0.97191" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0005.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.0449438" />
+                            <point x="1" y="0.0449438" />
+                            <point x="1" y="0.955056" />
+                            <point x="0.00925926" y="0.955056" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0006.png">
+                        <collision-poly>
+                            <point x="0" y="0.0393258" />
+                            <point x="1" y="0.0393258" />
+                            <point x="1" y="0.966292" />
+                            <point x="0" y="0.966292" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0007.png">
+                        <collision-poly>
+                            <point x="0" y="0.0224719" />
+                            <point x="1" y="0.0224719" />
+                            <point x="1" y="0.977528" />
+                            <point x="0" y="0.977528" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0008.png">
+                        <collision-poly>
+                            <point x="0" y="0.0280899" />
+                            <point x="1" y="0.0280899" />
+                            <point x="1" y="0.97191" />
+                            <point x="0" y="0.97191" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="desarmado_andando" pingpong="0" repeatcount="1" repeatto="0" sid="122269530714902" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0009.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.00561798" />
+                            <point x="1" y="0.00561798" />
+                            <point x="1" y="0.994382" />
+                            <point x="0.00925926" y="0.994382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0010.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00925926" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0011.png">
+                        <collision-poly>
+                            <point x="0" y="0.011236" />
+                            <point x="1" y="0.011236" />
+                            <point x="1" y="0.994382" />
+                            <point x="0" y="0.994382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0012.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.0224719" />
+                            <point x="1" y="0.0224719" />
+                            <point x="1" y="0.977528" />
+                            <point x="0.00925926" y="0.977528" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0013.png">
+                        <collision-poly>
+                            <point x="0" y="0.011236" />
+                            <point x="1" y="0.011236" />
+                            <point x="1" y="0.994382" />
+                            <point x="0" y="0.994382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0014.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00925926" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0015.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.011236" />
+                            <point x="1" y="0.011236" />
+                            <point x="1" y="0.988764" />
+                            <point x="0.00925926" y="0.988764" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0016.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.0168539" />
+                            <point x="1" y="0.0168539" />
+                            <point x="1" y="0.983146" />
+                            <point x="0.00925926" y="0.983146" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="espada_parado" pingpong="0" repeatcount="1" repeatto="0" sid="100413813122181" speed="12">
+                    <frame duration="1" hotspotX="0.6875" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0001.png">
+                        <collision-poly>
+                            <point x="0" y="0.0449438" />
+                            <point x="1" y="0.0449438" />
+                            <point x="1" y="0.955056" />
+                            <point x="0" y="0.955056" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.689024" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0002.png">
+                        <collision-poly>
+                            <point x="0" y="0.0449438" />
+                            <point x="1" y="0.0449438" />
+                            <point x="1" y="0.960674" />
+                            <point x="0" y="0.960674" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.688623" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0003.png">
+                        <collision-poly>
+                            <point x="0" y="0.0393258" />
+                            <point x="1" y="0.0393258" />
+                            <point x="1" y="0.960674" />
+                            <point x="0" y="0.960674" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.688623" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0004.png">
+                        <collision-poly>
+                            <point x="0" y="0.0393258" />
+                            <point x="1" y="0.0393258" />
+                            <point x="1" y="0.966292" />
+                            <point x="0" y="0.966292" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.685185" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0005.png">
+                        <collision-poly>
+                            <point x="0" y="0.0337079" />
+                            <point x="1" y="0.0337079" />
+                            <point x="1" y="0.966292" />
+                            <point x="0" y="0.966292" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.685535" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0006.png">
+                        <collision-poly>
+                            <point x="0" y="0.0393258" />
+                            <point x="1" y="0.0393258" />
+                            <point x="1" y="0.966292" />
+                            <point x="0" y="0.966292" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.6875" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0007.png">
+                        <collision-poly>
+                            <point x="0" y="0.0176471" />
+                            <point x="1" y="0.0176471" />
+                            <point x="1" y="0.982353" />
+                            <point x="0" y="0.982353" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.6875" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0008.png">
+                        <collision-poly>
+                            <point x="0" y="0.0235294" />
+                            <point x="1" y="0.0235294" />
+                            <point x="1" y="0.982353" />
+                            <point x="0" y="0.982353" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="espada_andando" pingpong="0" repeatcount="1" repeatto="0" sid="163519653468484" speed="12">
+                    <frame duration="1" hotspotX="0.630573" hotspotY="0.516854" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0009.png">
+                        <collision-poly>
+                            <point x="0" y="0.00561798" />
+                            <point x="1" y="0.00561798" />
+                            <point x="1" y="0.994382" />
+                            <point x="0" y="0.994382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.632911" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0010.png" />
+                    <frame duration="1" hotspotX="0.632911" hotspotY="0.505618" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0011.png">
+                        <collision-poly>
+                            <point x="0" y="0.011236" />
+                            <point x="1" y="0.011236" />
+                            <point x="1" y="0.994382" />
+                            <point x="0" y="0.994382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.630573" hotspotY="0.505618" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0012.png">
+                        <collision-poly>
+                            <point x="0" y="0.0224719" />
+                            <point x="1" y="0.0224719" />
+                            <point x="1" y="0.983146" />
+                            <point x="0" y="0.983146" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.632258" hotspotY="0.505618" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0013.png">
+                        <collision-poly>
+                            <point x="0" y="0.011236" />
+                            <point x="1" y="0.011236" />
+                            <point x="1" y="0.994382" />
+                            <point x="0" y="0.994382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.630573" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0014.png" />
+                    <frame duration="1" hotspotX="0.632911" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0015.png">
+                        <collision-poly>
+                            <point x="0" y="0.011236" />
+                            <point x="1" y="0.011236" />
+                            <point x="1" y="0.988764" />
+                            <point x="0" y="0.988764" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.630573" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_walk_0016.png">
+                        <collision-poly>
+                            <point x="0" y="0.0168539" />
+                            <point x="1" y="0.0168539" />
+                            <point x="1" y="0.983146" />
+                            <point x="0" y="0.983146" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="personagemJogavel2" sid="542486191547294">
+        <object-type name="personagemJogavel2" sid="490046474075388">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Pin" sid="253271043997603">
+                <behavior-type name="Pin" sid="368700972482484">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304806664432797" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\roger\OneDrive\Documents\Jogos Des\projeto-final-des-jogos\Assets\Fighter sprites\fighter_Idle_0002.png">
+                <animation framecount="8" loop="1" name="desarmado_parado" pingpong="0" repeatcount="1" repeatto="0" sid="898623067868961" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\roger\OneDrive\Documents\Jogos Des\projeto-final-des-jogos\Assets\Fighter sprites\fighter_Idle_0001.png">
                         <collision-poly>
-                            <point x="0.981481" y="0.246988" />
-                            <point x="0.87963" y="0.5" />
-                            <point x="0.490741" y="0.813253" />
-                            <point x="0.111111" y="0.493976" />
-                            <point x="0.0277778" y="0.246988" />
-                            <point x="0.212963" y="0.0662651" />
-                            <point x="0.490741" y="0.0060241" />
-                            <point x="0.777778" y="0.060241" />
+                            <point x="1" y="0.976471" />
+                            <point x="0" y="0.976471" />
+                            <point x="0" y="0.0235294" />
+                            <point x="1" y="0.0235294" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0002.png">
+                        <collision-poly>
+                            <point x="1" y="0.988235" />
+                            <point x="0" y="0.988235" />
+                            <point x="0" y="0.0117647" />
+                            <point x="1" y="0.0117647" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0003.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0004.png">
+                        <collision-poly>
+                            <point x="0.990741" y="0.994118" />
+                            <point x="0" y="0.994118" />
+                            <point x="0" y="0.00588235" />
+                            <point x="0.990741" y="0.00588235" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0005.png">
+                        <collision-poly>
+                            <point x="0.990741" y="0.976471" />
+                            <point x="0" y="0.976471" />
+                            <point x="0" y="0.0235294" />
+                            <point x="0.990741" y="0.0235294" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0006.png">
+                        <collision-poly>
+                            <point x="1" y="0.988235" />
+                            <point x="0" y="0.988235" />
+                            <point x="0" y="0.0176471" />
+                            <point x="1" y="0.0176471" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0007.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_Idle_0008.png">
+                        <collision-poly>
+                            <point x="1" y="0.994118" />
+                            <point x="0" y="0.994118" />
+                            <point x="0" y="0.00588235" />
+                            <point x="1" y="0.00588235" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="espada_parado" pingpong="0" repeatcount="1" repeatto="0" sid="398678446377251" speed="12">
+                    <frame duration="1" hotspotX="0.3125" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0001.png">
+                        <collision-poly>
+                            <point x="1" y="0.976471" />
+                            <point x="0" y="0.976471" />
+                            <point x="0" y="0.0235294" />
+                            <point x="1" y="0.0235294" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.310976" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0002.png">
+                        <collision-poly>
+                            <point x="1" y="0.982353" />
+                            <point x="0" y="0.982353" />
+                            <point x="0" y="0.0235294" />
+                            <point x="1" y="0.0235294" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.311377" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0003.png">
+                        <collision-poly>
+                            <point x="1" y="0.982353" />
+                            <point x="0" y="0.982353" />
+                            <point x="0" y="0.0176471" />
+                            <point x="1" y="0.0176471" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.311377" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0004.png">
+                        <collision-poly>
+                            <point x="1" y="0.988235" />
+                            <point x="0" y="0.988235" />
+                            <point x="0" y="0.0176471" />
+                            <point x="1" y="0.0176471" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.314815" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0005.png">
+                        <collision-poly>
+                            <point x="1" y="0.988235" />
+                            <point x="0" y="0.988235" />
+                            <point x="0" y="0.0117647" />
+                            <point x="1" y="0.0117647" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.314465" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0006.png">
+                        <collision-poly>
+                            <point x="1" y="0.988235" />
+                            <point x="0" y="0.988235" />
+                            <point x="0" y="0.0176471" />
+                            <point x="1" y="0.0176471" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.3125" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0007.png">
+                        <collision-poly>
+                            <point x="1" y="0.982353" />
+                            <point x="0" y="0.982353" />
+                            <point x="0" y="0.0176471" />
+                            <point x="1" y="0.0176471" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.3125" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0008.png">
+                        <collision-poly>
+                            <point x="1" y="0.982353" />
+                            <point x="0" y="0.982353" />
+                            <point x="0" y="0.0235294" />
+                            <point x="1" y="0.0235294" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -137,6 +502,7 @@
                 <instance-variable name="moveLeftKeyCode" sid="560314267661477" type="number" />
                 <instance-variable name="jumpKeyCode" sid="398658433049678" type="number" />
                 <instance-variable name="punchKeyCode" sid="243464073727872" type="number" />
+                <instance-variable name="armaAtual" sid="346172112604958" type="string" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">
@@ -149,13 +515,14 @@
                 <member>colisaoEspada</member>
             </members>
             <instance-variables>
-                <instance-variable name="held" sid="134608163219496" type="boolean" />
+                <instance-variable name="tipoArma" sid="934367372339427" type="string" />
             </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="126244336368465">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
+        </family>
+        <family name="animacaoJogador" plugin-id="Sprite" sid="370493821901159">
+            <members>
+                <member>personagemJogavel1</member>
+                <member>personagemJogavel2</member>
+            </members>
         </family>
     </families>
     <layout-folder>

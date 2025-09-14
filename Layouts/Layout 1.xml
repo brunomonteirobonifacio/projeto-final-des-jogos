@@ -100,6 +100,7 @@
                         <moveLeftKeyCode>65</moveLeftKeyCode>
                         <jumpKeyCode>87</jumpKeyCode>
                         <punchKeyCode>0</punchKeyCode>
+                        <armaAtual>desarmado</armaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -145,6 +146,7 @@
                         <moveLeftKeyCode>37</moveLeftKeyCode>
                         <jumpKeyCode>38</jumpKeyCode>
                         <punchKeyCode>0</punchKeyCode>
+                        <armaAtual>desarmado</armaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -177,10 +179,35 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="personagemJogavel1" uid="5">
+                <instance type="colisaoEspada" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <tipoArma>espada</tipoArma>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>315</x>
+                        <y>457</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="personagemJogavel1" uid="5">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>fighter_parado</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -194,7 +221,7 @@
                         <y>416</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>96</height>
+                        <height>102.940040588</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -219,39 +246,11 @@
                         <y>416</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>93.68674469</height>
+                        <height>98.314002991</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>-0.000600545</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="colisaoEspada" uid="4">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <held>false</held>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>315</x>
-                        <y>457</y>
-                        <z>0</z>
-                        <width>8</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>1</hotspotY>
-                        <angle>1.570796371</angle>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
