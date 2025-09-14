@@ -63,12 +63,6 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299154153496044" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="1">
                         <image-point name="PosicaoColisaoArma" x="1" y="1" />
-                        <collision-poly>
-                            <point x="0.0151515" y="0.0151515" />
-                            <point x="0.5" y="0.0151515" />
-                            <point x="0.5" y="0.984848" />
-                            <point x="0.0151515" y="0.984848" />
-                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -827,6 +821,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="jogadorSegurandoUID" sid="984950934429322" type="number" />
+                <instance-variable name="dano" sid="312358913219532" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Pin" sid="455718710611728">
@@ -844,6 +839,19 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760955861101891" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arrowDown" sid="808424842521206">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="arrow_down" pingpong="0" repeatcount="1" repeatto="0" sid="395419615309392" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.52381" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Jumbo\Dark\Single PNGs\ARROWDOWN.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="press" pingpong="0" repeatcount="1" repeatto="0" sid="606864377667465" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.52381" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.52381" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.52381" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -865,6 +873,7 @@
                 <instance-variable name="atacando" sid="711982287342508" type="boolean" />
                 <instance-variable comment='Após quantos golpes a arma atual &quot;quebra&quot;' name="durabilidadeArmaAtual" sid="319059180552522" type="number" />
                 <instance-variable name="distanciaHorizontalColisaoArmaAtual" sid="661541964273759" type="number" />
+                <instance-variable name="danoArmaAtual" sid="144117770340174" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">
@@ -881,6 +890,7 @@
                 <instance-variable name="tipoArma" sid="934367372339427" type="string" />
                 <instance-variable comment='Após quantos golpes a arma &quot;quebra&quot;' name="durabilidade" sid="206390851489606" type="number" />
                 <instance-variable comment="Distância (a partir do jogador) que o golpe causa dano" name="distanciaHorizontalColisaoArma" sid="491630684252881" type="number" />
+                <instance-variable name="dano" sid="314779563406812" type="number" />
             </instance-variables>
         </family>
         <family name="animacaoJogador" plugin-id="Sprite" sid="370493821901159">
@@ -891,6 +901,7 @@
         </family>
         <family name="key" plugin-id="Sprite" sid="969319386658038">
             <members>
+                <member>arrowDown</member>
                 <member>E</member>
                 <member>UM</member>
             </members>

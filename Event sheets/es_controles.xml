@@ -33,6 +33,10 @@
                             <param id="0" name="Instance variable">distanciaHorizontalColisaoArmaAtual</param>
                             <param id="1" name="Value">desarmado.distanciaHorizontalColisaoArma</param>
                         </action>
+                        <action id="-10" name="Set value" sid="234557683537196" type="colisaoJogador">
+                            <param id="0" name="Instance variable">danoArmaAtual</param>
+                            <param id="1" name="Value">desarmado.dano</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="591988295038111">
@@ -126,6 +130,7 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <comment>TODO: Atualmente nesse grupo a lógica dos jogadores 1 e 2 está dividida, verificar se tem como unifciar</comment>
         <event-group description="" sid="121797552578729" title="Sprites Jogadores">
             <sub-events>
                 <event-block sid="600751200711066">
@@ -169,7 +174,7 @@
                                         <condition id="-7" name="Compare instance variable" sid="891601529474674" type="colisaoJogador1">
                                             <param id="0" name="Instance variable">armaAtual</param>
                                             <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Value">&quot;desarmado&quot;</param>
+                                            <param id="2" name="Value">desarmado.tipoArma</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -201,34 +206,46 @@
                                             <param id="1" name="Number">2</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="807215253404478" type="colisaoJogador1">
-                                            <param id="0" name="Object">colisaoArma</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">&quot;PosicaoColisaoArma&quot;</param>
-                                        </action>
-                                        <action id="-5" name="Set width" sid="522671851457328" type="colisaoArma">
-                                            <param id="0" name="Width">colisaoJogador1.distanciaHorizontalColisaoArmaAtual</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="825771038405140" type="colisaoArma">
-                                            <param id="0" name="Instance variable">jogadorSegurandoUID</param>
-                                            <param id="1" name="Value">colisaoJogador1.UID</param>
-                                        </action>
-                                        <action behavior="Pin" id="0" name="Pin to object" sid="152149143681783" type="colisaoArma">
-                                            <param id="0" name="Pin to">colisaoJogador1</param>
-                                            <param id="1" name="Mode">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
-                                        <event-block sid="353899822108670">
+                                        <event-block sid="743600776667432">
                                             <conditions>
-                                                <condition id="7" name="Is mirrored" sid="226308233525662" type="colisaoJogador1" />
+                                                <condition id="-4" name="Trigger once while true" sid="538201653654329" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="7" name="Set mirrored" sid="334114800832947" type="colisaoArma">
-                                                    <param id="0" name="State">0</param>
+                                                <action id="0" name="Spawn another object" sid="807215253404478" type="colisaoJogador1">
+                                                    <param id="0" name="Object">colisaoArma</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">&quot;PosicaoColisaoArma&quot;</param>
+                                                </action>
+                                                <action id="-5" name="Set width" sid="522671851457328" type="colisaoArma">
+                                                    <param id="0" name="Width">colisaoJogador1.distanciaHorizontalColisaoArmaAtual</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="825771038405140" type="colisaoArma">
+                                                    <param id="0" name="Instance variable">jogadorSegurandoUID</param>
+                                                    <param id="1" name="Value">colisaoJogador1.UID</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="152149143681783" type="colisaoArma">
+                                                    <param id="0" name="Pin to">colisaoJogador1</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="674446577217916" type="colisaoArma">
+                                                    <param id="0" name="Instance variable">dano</param>
+                                                    <param id="1" name="Value">colisaoJogador1.danoArmaAtual</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="353899822108670">
+                                                    <conditions>
+                                                        <condition id="7" name="Is mirrored" sid="226308233525662" type="colisaoJogador1" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="7" name="Set mirrored" sid="334114800832947" type="colisaoArma">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -335,7 +352,7 @@
                                                 <condition id="-7" name="Compare instance variable" sid="972182891881294" type="colisaoJogador2">
                                                     <param id="0" name="Instance variable">armaAtual</param>
                                                     <param id="1" name="Comparison">1</param>
-                                                    <param id="2" name="Value">&quot;desarmado&quot;</param>
+                                                    <param id="2" name="Value">desarmado.tipoArma</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -354,34 +371,46 @@
                                             <param id="1" name="Number">2</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="797077476350327" type="colisaoJogador2">
-                                            <param id="0" name="Object">colisaoArma</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">&quot;PosicaoColisaoArma&quot;</param>
-                                        </action>
-                                        <action id="-5" name="Set width" sid="264045226614771" type="colisaoArma">
-                                            <param id="0" name="Width">colisaoJogador2.distanciaHorizontalColisaoArmaAtual</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="411083729125165" type="colisaoArma">
-                                            <param id="0" name="Instance variable">jogadorSegurandoUID</param>
-                                            <param id="1" name="Value">colisaoJogador2.UID</param>
-                                        </action>
-                                        <action behavior="Pin" id="0" name="Pin to object" sid="572971972913130" type="colisaoArma">
-                                            <param id="0" name="Pin to">colisaoJogador2</param>
-                                            <param id="1" name="Mode">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                     <sub-events>
-                                        <event-block sid="404312485044685">
+                                        <event-block sid="442060526732685">
                                             <conditions>
-                                                <condition id="7" name="Is mirrored" sid="826663710948136" type="colisaoJogador2" />
+                                                <condition id="-4" name="Trigger once while true" sid="234282865372973" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="7" name="Set mirrored" sid="334558053479864" type="colisaoArma">
-                                                    <param id="0" name="State">0</param>
+                                                <action id="0" name="Spawn another object" sid="797077476350327" type="colisaoJogador2">
+                                                    <param id="0" name="Object">colisaoArma</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">&quot;PosicaoColisaoArma&quot;</param>
+                                                </action>
+                                                <action id="-5" name="Set width" sid="264045226614771" type="colisaoArma">
+                                                    <param id="0" name="Width">colisaoJogador2.distanciaHorizontalColisaoArmaAtual</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="411083729125165" type="colisaoArma">
+                                                    <param id="0" name="Instance variable">jogadorSegurandoUID</param>
+                                                    <param id="1" name="Value">colisaoJogador2.UID</param>
+                                                </action>
+                                                <action behavior="Pin" id="0" name="Pin to object" sid="572971972913130" type="colisaoArma">
+                                                    <param id="0" name="Pin to">colisaoJogador2</param>
+                                                    <param id="1" name="Mode">0</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="683734229210583" type="colisaoArma">
+                                                    <param id="0" name="Instance variable">dano</param>
+                                                    <param id="1" name="Value">colisaoJogador2.danoArmaAtual</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="404312485044685">
+                                                    <conditions>
+                                                        <condition id="7" name="Is mirrored" sid="826663710948136" type="colisaoJogador2" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="7" name="Set mirrored" sid="334558053479864" type="colisaoArma">
+                                                            <param id="0" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -463,86 +492,96 @@
         </event-group>
         <event-group description="" sid="286991704295405" title="Armas">
             <sub-events>
-                <event-block sid="464474535682319">
+                <event-block sid="576742448284552">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="528853429040709" type="colisaoJogador">
-                            <param id="0" name="Object">coletavelArma</param>
-                        </condition>
-                        <condition id="-33" name="Pick by comparison" sid="526732975351219" type="System">
-                            <param id="0" name="Object">key</param>
-                            <param id="1" name="Expression">key.keyCode</param>
-                            <param id="2" name="Comparison">0</param>
-                            <param id="3" name="Value">colisaoJogador.pickupKeyCode</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="250514915411055" type="key">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="798490385532756" type="key">
-                            <param id="0" name="Animation">&quot;press&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="452436643163442" type="key">
-                            <param id="0" name="X">coletavelArma.X</param>
-                            <param id="1" name="Y">coletavelArma.Y - 100</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="910907090716680">
-                    <conditions>
-                        <condition id="1" name="On any key pressed" sid="184518880112017" type="Keyboard" />
-                        <condition id="-19" name="Pick all" sid="380999837294045" type="System">
-                            <param id="0" name="Object">colisaoJogador</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="753017802881082" type="colisaoJogador">
-                            <param id="0" name="Instance variable">pickupKeyCode</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">Keyboard.LastKeyCode</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="356809129620375" type="colisaoJogador">
-                            <param id="0" name="Object">coletavelArma</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="502441097166087" type="coletavelArma" />
-                        <action id="-10" name="Set value" sid="502521296184667" type="colisaoJogador">
+                        <condition id="-7" name="Compare instance variable" sid="507510590713217" type="colisaoJogador">
                             <param id="0" name="Instance variable">armaAtual</param>
-                            <param id="1" name="Value">coletavelArma.tipoArma</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="726441981082306" type="key">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="739087597987579" type="colisaoJogador">
-                            <param id="0" name="Instance variable">durabilidadeArmaAtual</param>
-                            <param id="1" name="Value">coletavelArma.durabilidade</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="859868154461405" type="colisaoJogador">
-                            <param id="0" name="Instance variable">distanciaHorizontalColisaoArmaAtual</param>
-                            <param id="1" name="Value">coletavelArma.distanciaHorizontalColisaoArma</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="109754348885541">
-                    <conditions>
-                        <condition id="-19" name="Pick all" sid="178759803984083" type="System">
-                            <param id="0" name="Object">colisaoJogador</param>
-                        </condition>
-                        <condition id="1" inverted="1" name="Is overlapping another object" sid="245397315239754" type="colisaoJogador">
-                            <param id="0" name="Object">coletavelArma</param>
-                        </condition>
-                        <condition id="-33" name="Pick by comparison" sid="246278030014310" type="System">
-                            <param id="0" name="Object">key</param>
-                            <param id="1" name="Expression">key.keyCode</param>
-                            <param id="2" name="Comparison">0</param>
-                            <param id="3" name="Value">colisaoJogador.pickupKeyCode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">desarmado.tipoArma</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="875828464684090" type="key">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="464474535682319">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="528853429040709" type="colisaoJogador">
+                                    <param id="0" name="Object">coletavelArma</param>
+                                </condition>
+                                <condition id="-33" name="Pick by comparison" sid="526732975351219" type="System">
+                                    <param id="0" name="Object">key</param>
+                                    <param id="1" name="Expression">key.keyCode</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">colisaoJogador.pickupKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="250514915411055" type="key">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="798490385532756" type="key">
+                                    <param id="0" name="Animation">&quot;press&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="452436643163442" type="key">
+                                    <param id="0" name="X">coletavelArma.X</param>
+                                    <param id="1" name="Y">coletavelArma.Y - 100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="910907090716680">
+                            <conditions>
+                                <condition id="1" name="On any key pressed" sid="184518880112017" type="Keyboard" />
+                                <condition id="-7" name="Compare instance variable" sid="753017802881082" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">pickupKeyCode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Keyboard.LastKeyCode</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="356809129620375" type="colisaoJogador">
+                                    <param id="0" name="Object">coletavelArma</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="502441097166087" type="coletavelArma" />
+                                <action id="-10" name="Set value" sid="502521296184667" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">armaAtual</param>
+                                    <param id="1" name="Value">coletavelArma.tipoArma</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="726441981082306" type="key">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="739087597987579" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">durabilidadeArmaAtual</param>
+                                    <param id="1" name="Value">coletavelArma.durabilidade</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="859868154461405" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">distanciaHorizontalColisaoArmaAtual</param>
+                                    <param id="1" name="Value">coletavelArma.distanciaHorizontalColisaoArma</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="267440395279209" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">danoArmaAtual</param>
+                                    <param id="1" name="Value">coletavelArma.dano</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="109754348885541">
+                            <conditions>
+                                <condition id="1" inverted="1" name="Is overlapping another object" sid="245397315239754" type="colisaoJogador">
+                                    <param id="0" name="Object">coletavelArma</param>
+                                </condition>
+                                <condition id="-33" name="Pick by comparison" sid="246278030014310" type="System">
+                                    <param id="0" name="Object">key</param>
+                                    <param id="1" name="Expression">key.keyCode</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">colisaoJogador.pickupKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="875828464684090" type="key">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="522584325310538">
                     <conditions>
@@ -554,7 +593,7 @@
                         <condition id="-7" name="Compare instance variable" sid="541705148428810" type="colisaoJogador">
                             <param id="0" name="Instance variable">armaAtual</param>
                             <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">&quot;desarmado&quot;</param>
+                            <param id="2" name="Value">desarmado.tipoArma</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -566,7 +605,51 @@
                             <param id="0" name="Instance variable">distanciaHorizontalColisaoArmaAtual</param>
                             <param id="1" name="Value">desarmado.distanciaHorizontalColisaoArma</param>
                         </action>
+                        <action id="-10" name="Set value" sid="931877128717897" type="colisaoJogador">
+                            <param id="0" name="Instance variable">danoArmaAtual</param>
+                            <param id="1" name="Value">desarmado.dano</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="907406444452677" type="colisaoJogador">
+                            <param id="0" name="Instance variable">durabilidadeArmaAtual</param>
+                            <param id="1" name="Value">coletavelArma.durabilidade</param>
+                        </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="552160011171342" title="Colisao ataque">
+            <sub-events>
+                <event-block sid="659729061608089">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="565722801280392" type="colisaoArma">
+                            <param id="0" name="Object">colisaoJogador</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="676768267983562" type="colisaoArma">
+                            <param id="0" name="Instance variable">jogadorSegurandoUID</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">colisaoJogador.UID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="278602961621064" type="colisaoJogador">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Value">colisaoArma.dano</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="123442068768625" title="Morte">
+            <sub-events>
+                <event-block sid="503103780253603">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="570124152497067" type="colisaoJogador">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>

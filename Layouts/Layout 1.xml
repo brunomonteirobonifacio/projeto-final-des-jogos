@@ -105,6 +105,7 @@
                         <atacando>false</atacando>
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
+                        <danoArmaAtual>0</danoArmaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -155,6 +156,7 @@
                         <atacando>false</atacando>
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
+                        <danoArmaAtual>0</danoArmaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -198,6 +200,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>100</distanciaHorizontalColisaoArma>
+                        <dano>10</dano>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -323,6 +326,7 @@
                     </properties>
                     <instance-variables>
                         <jogadorSegurandoUID>0</jogadorSegurandoUID>
+                        <dano>0</dano>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -353,6 +357,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>100</distanciaHorizontalColisaoArma>
+                        <dano>10</dano>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -380,6 +385,7 @@
                         <tipoArma>desarmado</tipoArma>
                         <durabilidade>0</durabilidade>
                         <distanciaHorizontalColisaoArma>32</distanciaHorizontalColisaoArma>
+                        <dano>5</dano>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -392,6 +398,31 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="arrowDown" uid="13">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <keyCode>40</keyCode>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>512</x>
+                        <y>-64</y>
+                        <z>0</z>
+                        <width>19</width>
+                        <height>21</height>
+                        <depth>0</depth>
+                        <hotspotX>0.526315808</hotspotX>
+                        <hotspotY>0.523809552</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
