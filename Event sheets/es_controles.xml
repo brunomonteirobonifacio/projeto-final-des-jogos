@@ -130,6 +130,10 @@
                             <param id="0" name="Instance variable">atacando</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-12" name="Subtract from" sid="841283965280433" type="colisaoJogador1">
+                            <param id="0" name="Instance variable">durabilidadeArmaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="455729151852140">
@@ -329,6 +333,10 @@
                         <action id="-15" name="Set visible" sid="726441981082306" type="key">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-10" name="Set value" sid="739087597987579" type="colisaoJogador">
+                            <param id="0" name="Instance variable">durabilidadeArmaAtual</param>
+                            <param id="1" name="Value">coletavelArma.durabilidade</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="109754348885541">
@@ -349,6 +357,26 @@
                     <actions>
                         <action id="-15" name="Set visible" sid="875828464684090" type="key">
                             <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="522584325310538">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="907826495470116" type="colisaoJogador">
+                            <param id="0" name="Instance variable">durabilidadeArmaAtual</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="541705148428810" type="colisaoJogador">
+                            <param id="0" name="Instance variable">armaAtual</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;desarmado&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="101828388194752" type="colisaoJogador">
+                            <param id="0" name="Instance variable">armaAtual</param>
+                            <param id="1" name="Value">&quot;desarmado&quot;</param>
                         </action>
                     </actions>
                 </event-block>

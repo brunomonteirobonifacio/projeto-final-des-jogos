@@ -630,6 +630,7 @@
                 <instance-variable name="pickupKeyCode" sid="385346808672356" type="number" />
                 <instance-variable name="armaAtual" sid="346172112604958" type="string" />
                 <instance-variable name="atacando" sid="711982287342508" type="boolean" />
+                <instance-variable comment='Após quantos golpes a arma atual &quot;quebra&quot;' name="durabilidadeArmaAtual" sid="319059180552522" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">
@@ -643,6 +644,7 @@
             </members>
             <instance-variables>
                 <instance-variable name="tipoArma" sid="934367372339427" type="string" />
+                <instance-variable comment='Após quantos golpes a arma &quot;quebra&quot;' name="durabilidade" sid="206390851489606" type="number" />
             </instance-variables>
         </family>
         <family name="animacaoJogador" plugin-id="Sprite" sid="370493821901159">

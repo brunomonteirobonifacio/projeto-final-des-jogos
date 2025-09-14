@@ -103,6 +103,7 @@
                         <pickupKeyCode>69</pickupKeyCode>
                         <armaAtual>desarmado</armaAtual>
                         <atacando>false</atacando>
+                        <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -151,6 +152,7 @@
                         <pickupKeyCode>97</pickupKeyCode>
                         <armaAtual>desarmado</armaAtual>
                         <atacando>false</atacando>
+                        <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -192,6 +194,7 @@
                     </properties>
                     <instance-variables>
                         <tipoArma>espada</tipoArma>
+                        <durabilidade>3</durabilidade>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
