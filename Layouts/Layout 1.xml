@@ -95,7 +95,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <vida>5</vida>
+                        <vida>100</vida>
                         <moveRightKeyCode>68</moveRightKeyCode>
                         <moveLeftKeyCode>65</moveLeftKeyCode>
                         <jumpKeyCode>87</jumpKeyCode>
@@ -143,7 +143,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <vida>5</vida>
+                        <vida>100</vida>
                         <moveRightKeyCode>39</moveRightKeyCode>
                         <moveLeftKeyCode>37</moveLeftKeyCode>
                         <jumpKeyCode>38</jumpKeyCode>
