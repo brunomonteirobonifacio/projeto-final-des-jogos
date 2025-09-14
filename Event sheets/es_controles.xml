@@ -16,72 +16,92 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="417835165943708">
+                        <event-block sid="630993850186287">
                             <conditions>
-                                <condition id="5" name="Key code is down" sid="337391883766083" type="Keyboard">
-                                    <param id="0" name="Keycode">colisaoJogador.jumpKeyCode</param>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="810707664928969" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">atacando</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="261373620543195" type="colisaoJogador">
-                                    <param id="0" name="Control">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="373905030947881">
-                            <conditions>
-                                <condition id="5" name="Key code is down" sid="565087291448784" type="Keyboard">
-                                    <param id="0" name="Keycode">colisaoJogador.moveRightKeyCode</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="451889756847878" type="colisaoJogador">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="472738180844980">
-                            <conditions>
-                                <condition id="5" name="Key code is down" sid="196199305379875" type="Keyboard">
-                                    <param id="0" name="Keycode">colisaoJogador.moveLeftKeyCode</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="208121974548013" type="colisaoJogador">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="528334875087971">
-                            <conditions>
-                                <condition id="5" name="Key code is down" sid="645499407004749" type="Keyboard">
-                                    <param id="0" name="Keycode">colisaoJogador.punchKeyCode</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Platform" id="7" name="Simulate control" sid="763091879821349" type="colisaoJogador">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-group description="" sid="286991704295405" title="Armas">
+                            <actions />
                             <sub-events>
-                                <event-block sid="631262189362701">
+                                <event-block sid="417835165943708">
                                     <conditions>
-                                        <condition id="0" name="On collision with another object" sid="388935752028054" type="colisaoJogador">
-                                            <param id="0" name="Object">colisaoArma</param>
+                                        <condition id="5" name="Key code is down" sid="337391883766083" type="Keyboard">
+                                            <param id="0" name="Keycode">colisaoJogador.jumpKeyCode</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="793588525378913" type="colisaoJogador">
-                                            <param id="0" name="Instance variable">armaAtual</param>
-                                            <param id="1" name="Value">colisaoArma.tipoArma</param>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="261373620543195" type="colisaoJogador">
+                                            <param id="0" name="Control">2</param>
                                         </action>
-                                        <action id="-9" name="Destroy" sid="422644796179647" type="colisaoArma" />
+                                    </actions>
+                                </event-block>
+                                <event-block sid="373905030947881">
+                                    <conditions>
+                                        <condition id="5" name="Key code is down" sid="565087291448784" type="Keyboard">
+                                            <param id="0" name="Keycode">colisaoJogador.moveRightKeyCode</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="451889756847878" type="colisaoJogador">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="729683390579150" type="colisaoJogador">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="472738180844980">
+                                    <conditions>
+                                        <condition id="5" name="Key code is down" sid="196199305379875" type="Keyboard">
+                                            <param id="0" name="Keycode">colisaoJogador.moveLeftKeyCode</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="208121974548013" type="colisaoJogador">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="725540766331336" type="colisaoJogador">
+                                            <param id="0" name="State">0</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
-                        </event-group>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Precisa ser separado pois o evento key pressed não pode ser executado dentro de um forEach</comment>
+                <event-block sid="940455502336764">
+                    <conditions>
+                        <condition id="1" name="On any key pressed" sid="332750023831789" type="Keyboard" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="823495920298334">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="831260601386898" type="System">
+                                    <param id="0" name="First value">Keyboard.LastKeyCode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">colisaoJogador.punchKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="307392578880151">
+                                    <conditions>
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="459088797167475" type="colisaoJogador">
+                                            <param id="0" name="Instance variable">atacando</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="592934245720641" type="colisaoJogador">
+                                            <param id="0" name="Instance variable">atacando</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
@@ -101,98 +121,183 @@
                             <param id="0" name="Pin to">colisaoJogador2</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="679204902748525">
-                    <conditions>
-                        <condition id="5" name="Key code is down" sid="792612690305377" type="Keyboard">
-                            <param id="0" name="Keycode">colisaoJogador1.moveRightKeyCode</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="894063579787205" type="personagemJogavel1">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="629492720550274">
-                    <conditions>
-                        <condition id="5" name="Key code is down" sid="764109050376179" type="Keyboard">
-                            <param id="0" name="Keycode">colisaoJogador1.moveLeftKeyCode</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="746937150600253" type="personagemJogavel1">
+                        <action id="7" name="Set mirrored" sid="939051764434468" type="personagemJogavel2">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="747911907391602">
+                <event-block sid="413827802444453">
                     <conditions>
-                        <condition id="5" name="Key code is down" sid="870485750508137" type="Keyboard">
-                            <param id="0" name="Keycode">colisaoJogador2.moveRightKeyCode</param>
+                        <condition id="4" name="On finished" sid="866773333595804" type="personagemJogavel1">
+                            <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_ataque&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="845896540544962" type="personagemJogavel2">
-                            <param id="0" name="State">0</param>
+                        <action id="-13" name="Set boolean" sid="344166791308290" type="colisaoJogador1">
+                            <param id="0" name="Instance variable">atacando</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="299622208128573">
+                <event-block sid="455729151852140">
                     <conditions>
-                        <condition id="5" name="Key code is down" sid="976392628435527" type="Keyboard">
-                            <param id="0" name="Keycode">colisaoJogador2.moveLeftKeyCode</param>
+                        <condition id="-8" name="Is boolean instance variable set" sid="230928019696699" type="colisaoJogador1">
+                            <param id="0" name="Instance variable">atacando</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="7" name="Set mirrored" sid="631123848952403" type="personagemJogavel2">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="800258978652948">
-                    <conditions>
-                        <condition behavior="Platform" id="0" name="Is moving" sid="437514180852433" type="colisaoJogador1" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="727604204535379" type="personagemJogavel1">
-                            <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_andando&quot;</param>
+                        <action id="4" name="Set animation" sid="166768583260772" type="personagemJogavel1">
+                            <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_ataque&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="935106559495577">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="424104891025255" type="personagemJogavel1">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="807215253404478" type="colisaoJogador1">
+                                    <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_ataque&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="920824202062061">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="261760290562305" type="personagemJogavel1">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="729502360282115" type="colisaoJogador1">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="740942602809453">
+                <event-block sid="905013527641982">
                     <conditions>
-                        <condition id="-22" name="Else" sid="327173080971089" type="System" />
+                        <condition id="-22" name="Else" sid="640380129667209" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="679204902748525">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="792612690305377" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador1.moveRightKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="894063579787205" type="personagemJogavel1">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="629492720550274">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="764109050376179" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador1.moveLeftKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="746937150600253" type="personagemJogavel1">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="747911907391602">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="870485750508137" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador2.moveRightKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="845896540544962" type="personagemJogavel2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="299622208128573">
+                            <conditions>
+                                <condition id="5" name="Key code is down" sid="976392628435527" type="Keyboard">
+                                    <param id="0" name="Keycode">colisaoJogador2.moveLeftKeyCode</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="631123848952403" type="personagemJogavel2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="800258978652948">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="437514180852433" type="colisaoJogador1" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="727604204535379" type="personagemJogavel1">
+                                    <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_andando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="740942602809453">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="327173080971089" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="472155723762509" type="personagemJogavel1">
+                                    <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_parado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="113177425641972">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="289100589400920" type="colisaoJogador2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="835386811816986" type="personagemJogavel2">
+                                    <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_andando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="922840783757506">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="853674617215745" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="886722937814865" type="personagemJogavel2">
+                                    <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_parado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="286991704295405" title="Armas">
+            <sub-events>
+                <event-block sid="631262189362701">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="388935752028054" type="colisaoJogador">
+                            <param id="0" name="Object">coletavelArma</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="472155723762509" type="personagemJogavel1">
-                            <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_parado&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="-10" name="Set value" sid="793588525378913" type="colisaoJogador">
+                            <param id="0" name="Instance variable">armaAtual</param>
+                            <param id="1" name="Value">coletavelArma.tipoArma</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="113177425641972">
-                    <conditions>
-                        <condition behavior="Platform" id="0" name="Is moving" sid="289100589400920" type="colisaoJogador2" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="835386811816986" type="personagemJogavel2">
-                            <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_andando&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="922840783757506">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="853674617215745" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="886722937814865" type="personagemJogavel2">
-                            <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_parado&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
+                        <action id="-9" name="Destroy" sid="422644796179647" type="coletavelArma" />
                     </actions>
                 </event-block>
             </sub-events>

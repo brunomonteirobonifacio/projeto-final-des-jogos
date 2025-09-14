@@ -89,7 +89,7 @@
             <instances>
                 <instance type="colisaoJogador1" uid="1">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -99,8 +99,9 @@
                         <moveRightKeyCode>68</moveRightKeyCode>
                         <moveLeftKeyCode>65</moveLeftKeyCode>
                         <jumpKeyCode>87</jumpKeyCode>
-                        <punchKeyCode>0</punchKeyCode>
+                        <punchKeyCode>83</punchKeyCode>
                         <armaAtual>desarmado</armaAtual>
+                        <atacando>false</atacando>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -135,7 +136,7 @@
                 </instance>
                 <instance type="colisaoJogador2" uid="3">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -147,6 +148,7 @@
                         <jumpKeyCode>38</jumpKeyCode>
                         <punchKeyCode>0</punchKeyCode>
                         <armaAtual>desarmado</armaAtual>
+                        <atacando>false</atacando>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -179,7 +181,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="colisaoEspada" uid="4">
+                <instance type="coletavelEspada" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -217,14 +219,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>96</x>
-                        <y>416</y>
+                        <x>96.910888672</x>
+                        <y>463.817932129</y>
                         <z>0</z>
                         <width>64</width>
                         <height>102.940040588</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -243,7 +245,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>704</x>
-                        <y>416</y>
+                        <y>412</y>
                         <z>0</z>
                         <width>64</width>
                         <height>98.314002991</height>

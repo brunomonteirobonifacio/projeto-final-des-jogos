@@ -9,18 +9,32 @@
                 <condition id="-2" name="On start of layout" sid="610593972137397" type="System" />
             </conditions>
             <actions>
-                <action id="9" name="Preload (by name)" sid="983392221386101" type="Audio">
-                    <param id="0" name="Folder">1</param>
-                    <param id="1" name="Audio file name">&quot;Crazy Train 8bit.m4a&quot;</param>
+                <action id="9" name="Preload (by name)" sid="502464652377892" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;crazy-train-8bit&quot;</param>
                 </action>
-                <action id="7" name="Play (by name)" sid="854039046319532" type="Audio">
-                    <param id="0" name="Folder">1</param>
-                    <param id="1" name="Audio file name">&quot;Crazy Train 8bit.m4a&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">0</param>
+                <action id="7" name="Play (by name)" sid="163925667257588" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;crazy-train-8bit&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-10</param>
                     <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="859059544185529">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="751635159885878" type="Keyboard" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="754034078335761">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="748450363492110" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
