@@ -451,6 +451,31 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="5" loop="0" name="desarmado_pulando" pingpong="0" repeatcount="1" repeatto="0" sid="229235298160551" speed="7">
+                    <frame duration="1" hotspotX="0.47619" hotspotY="0.98324" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0044.png" />
+                    <frame duration="1" hotspotX="0.472222" hotspotY="0.98" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0043.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.06" />
+                            <point x="0.37037" y="0.0133333" />
+                            <point x="0.583333" y="0.0133333" />
+                            <point x="0.916667" y="0.166667" />
+                            <point x="0.898148" y="0.546667" />
+                            <point x="0.37037" y="0.913333" />
+                            <point x="0.0277778" y="0.413333" />
+                            <point x="0.0833333" y="0.166667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.476636" hotspotY="0.982659" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0045.png" />
+                    <frame duration="1" hotspotX="0.471698" hotspotY="0.984252" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0046.png" />
+                    <frame duration="1" hotspotX="0.471698" hotspotY="0.98" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0047.png" />
+                </animation>
+                <animation framecount="5" loop="0" name="espada_pulando" pingpong="0" repeatcount="1" repeatto="0" sid="451696826782867" speed="7">
+                    <frame duration="1" hotspotX="0.642045" hotspotY="0.986667" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0043.png" />
+                    <frame duration="1" hotspotX="0.640288" hotspotY="0.988827" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0044.png" />
+                    <frame duration="1" hotspotX="0.642336" hotspotY="0.989247" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0045.png" />
+                    <frame duration="1" hotspotX="0.640523" hotspotY="0.986111" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0046.png" />
+                    <frame duration="1" hotspotX="0.64497" hotspotY="0.986667" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0047.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="personagemJogavel2" sid="490046474075388">
