@@ -627,6 +627,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="jogadorVencedor" uid="25">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>-160</y>
+                        <z>0</z>
+                        <width>609.011413574</width>
+                        <height>54.415279388</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500902534</hotspotX>
+                        <hotspotY>0.50505048</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

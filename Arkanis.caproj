@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
@@ -527,12 +528,12 @@
                     </frame>
                 </animation>
                 <animation framecount="8" loop="1" name="desarmado_andando" pingpong="0" repeatcount="1" repeatto="0" sid="122269530714902" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0009.png">
+                    <frame duration="1" hotspotX="0.490741" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0009.png">
                         <collision-poly>
-                            <point x="0.00925926" y="0.00561798" />
-                            <point x="1" y="0.00561798" />
-                            <point x="1" y="0.994382" />
-                            <point x="0.00925926" y="0.994382" />
+                            <point x="1.11411e-009" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.994318" />
+                            <point x="1.11411e-009" y="0.994318" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0010.png">
@@ -591,6 +592,20 @@
                             <point x="0.00925926" y="0.983146" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="12" loop="0" name="desarmado_ataque" pingpong="0" repeatcount="1" repeatto="0" sid="713538857356873" speed="12">
+                    <frame duration="1" hotspotX="0.693694" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0071.png" />
+                    <frame duration="1" hotspotX="0.694444" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0068.png" />
+                    <frame duration="1" hotspotX="0.691824" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0064.png" />
+                    <frame duration="1" hotspotX="0.690647" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0065.png" />
+                    <frame duration="1" hotspotX="0.689922" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0066.png" />
+                    <frame duration="1" hotspotX="0.697248" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0067.png" />
+                    <frame duration="1" hotspotX="0.694444" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0068.png" />
+                    <frame duration="1" hotspotX="0.694611" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0069.png" />
+                    <frame duration="1" hotspotX="0.694268" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0070.png" />
+                    <frame duration="1" hotspotX="0.691589" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0072.png" />
+                    <frame duration="1" hotspotX="0.691589" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0073.png" />
+                    <frame duration="1" hotspotX="0.694444" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0074.png" />
                 </animation>
                 <animation framecount="8" loop="1" name="espada_parado" pingpong="0" repeatcount="1" repeatto="0" sid="100413813122181" speed="12">
                     <frame duration="1" hotspotX="0.6875" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0001.png">
@@ -877,6 +892,42 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="tituloJogo" sid="346071441530797">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="327967435268030" speed="5">
+                    <frame duration="1" hotspotX="0.521236" hotspotY="0.77027" original-source="C:\Users\Bruno\Downloads\titulo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botaoJogar" sid="719915996658184">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731389236609121" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\Bruno\Downloads\botaoJogar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="degradeMenu" sid="775986343725659">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717797435415647" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="400956626850164">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="jogadorVencedor" sid="829578643533580">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870372862027462" speed="0">
+                    <frame duration="1" hotspotX="0.500903" hotspotY="0.50505" original-source="C:\Users\Bruno\Downloads\jogador1Vencedor.png" />
+                    <frame duration="1" hotspotX="0.500885" hotspotY="0.50505" original-source="C:\Users\Bruno\Downloads\jogador2Vencedor.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="colisaoJogador" plugin-id="Sprite" sid="882947211568261">
@@ -963,6 +1014,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="24" />
     </global-instances>
     <sounds-folder>
         <file name="crazy-train-8bit.ogg" />

@@ -677,6 +677,7 @@
         </event-group>
         <event-group description="" sid="552160011171342" title="Colisao ataque">
             <sub-events>
+                <comment>TODO: fazer knockback e animação do jogador que levou dano</comment>
                 <event-block sid="659729061608089">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="565722801280392" type="colisaoArma">
@@ -710,6 +711,12 @@
                     <actions>
                         <action behavior="Platform" id="11" name="Set enabled" sid="575045465273846" type="colisaoJogador">
                             <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="797505950060981" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="866167357049546" type="System">
+                            <param id="0" name="Layout">menuPrincipal</param>
                         </action>
                     </actions>
                 </event-block>

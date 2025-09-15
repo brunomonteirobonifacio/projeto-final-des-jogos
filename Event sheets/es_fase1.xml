@@ -22,5 +22,60 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="350783748164971">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="880013817733951" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="405162022596355" type="Audio">
+                    <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="650940941557667">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="108284665724824" type="colisaoJogador">
+                    <param id="0" name="Instance variable">vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="866855956440024" type="jogadorVencedor">
+                    <param id="0" name="X">433</param>
+                    <param id="1" name="Y">123</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="181184270171166">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="274872542956518" type="colisaoJogador1">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="523968547225098" type="jogadorVencedor">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="642610991414503">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="687760780285538" type="colisaoJogador2">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="433668094056182" type="jogadorVencedor">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
