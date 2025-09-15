@@ -928,6 +928,11 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="decoracaoChao" sid="430161611455002">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
     </object-folder>
     <families>
         <family name="colisaoJogador" plugin-id="Sprite" sid="882947211568261">
