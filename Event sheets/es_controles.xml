@@ -605,6 +605,21 @@
                                     <param id="1" name="Value">coletavelArma.dano</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="991527722614926">
+                                    <conditions>
+                                        <condition id="-33" name="Pick by comparison" sid="348920148509336" type="System">
+                                            <param id="0" name="Object">coletavelArmaDecoracao</param>
+                                            <param id="1" name="Expression">coletavelArma.decoracaoUID</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">coletavelArmaDecoracao.UID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="805792660651709" type="coletavelArmaDecoracao" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="109754348885541">
                             <conditions>

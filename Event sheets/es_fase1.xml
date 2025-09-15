@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>es_fase1</name>
+    <events>
+        <include>es_controles</include>
+        <event-block sid="317320350617279">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="610593972137397" type="System" />
+            </conditions>
+            <actions>
+                <action id="9" name="Preload (by name)" sid="502464652377892" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;crazy-train-8bit&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="163925667257588" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;crazy-train-8bit&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-15</param>
+                    <param id="2" name="Tag (optional)">&quot;backgroundMusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

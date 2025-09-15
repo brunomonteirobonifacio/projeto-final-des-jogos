@@ -163,12 +163,12 @@
                     </frame>
                 </animation>
                 <animation framecount="8" loop="1" name="desarmado_andando" pingpong="0" repeatcount="1" repeatto="0" sid="122269530714902" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0009.png">
+                    <frame duration="1" hotspotX="0.490741" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0009.png">
                         <collision-poly>
-                            <point x="0.00925926" y="0.00561798" />
-                            <point x="1" y="0.00561798" />
-                            <point x="1" y="0.994382" />
-                            <point x="0.00925926" y="0.994382" />
+                            <point x="1.11411e-009" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.994318" />
+                            <point x="1.11411e-009" y="0.994318" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_walk_0010.png">
@@ -227,6 +227,20 @@
                             <point x="0.00925926" y="0.983146" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="12" loop="0" name="desarmado_ataque" pingpong="0" repeatcount="1" repeatto="0" sid="713538857356873" speed="12">
+                    <frame duration="1" hotspotX="0.693694" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0071.png" />
+                    <frame duration="1" hotspotX="0.694444" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0068.png" />
+                    <frame duration="1" hotspotX="0.691824" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0064.png" />
+                    <frame duration="1" hotspotX="0.690647" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0065.png" />
+                    <frame duration="1" hotspotX="0.689922" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0066.png" />
+                    <frame duration="1" hotspotX="0.697248" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0067.png" />
+                    <frame duration="1" hotspotX="0.694444" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0068.png" />
+                    <frame duration="1" hotspotX="0.694611" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0069.png" />
+                    <frame duration="1" hotspotX="0.694268" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0070.png" />
+                    <frame duration="1" hotspotX="0.691589" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0072.png" />
+                    <frame duration="1" hotspotX="0.691589" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0073.png" />
+                    <frame duration="1" hotspotX="0.694444" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0074.png" />
                 </animation>
                 <animation framecount="8" loop="1" name="espada_parado" pingpong="0" repeatcount="1" repeatto="0" sid="100413813122181" speed="12">
                     <frame duration="1" hotspotX="0.6875" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0001.png">
@@ -855,6 +869,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="decoracaoColetavelEspada" sid="930993438044941">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="640839580592358" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_caída.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="colisaoJogador" plugin-id="Sprite" sid="882947211568261">
@@ -891,6 +913,7 @@
                 <instance-variable comment='Após quantos golpes a arma &quot;quebra&quot;' name="durabilidade" sid="206390851489606" type="number" />
                 <instance-variable comment="Distância (a partir do jogador) que o golpe causa dano" name="distanciaHorizontalColisaoArma" sid="491630684252881" type="number" />
                 <instance-variable name="dano" sid="314779563406812" type="number" />
+                <instance-variable name="decoracaoUID" sid="422310294392085" type="number" />
             </instance-variables>
         </family>
         <family name="animacaoJogador" plugin-id="Sprite" sid="370493821901159">
@@ -909,13 +932,20 @@
                 <instance-variable name="keyCode" sid="225185549410402" type="number" />
             </instance-variables>
         </family>
+        <family name="coletavelArmaDecoracao" plugin-id="Sprite" sid="767588254010316">
+            <members>
+                <member>decoracaoColetavelEspada</member>
+            </members>
+        </family>
     </families>
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>fase1.xml</layout>
+        <layout>menuPrincipal.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>es_controles.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>es_fase1.xml</event-sheet>
+        <event-sheet>es_menuPrincipal.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="2" />
