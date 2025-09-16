@@ -186,7 +186,7 @@
                                     <actions>
                                         <action id="4" name="Set animation" sid="772079654166355" type="personagemJogavel1">
                                             <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_morte&quot;</param>
-                                            <param id="1" name="From">1</param>
+                                            <param id="1" name="From">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -201,7 +201,7 @@
                             <actions>
                                 <action id="4" name="Set animation" sid="597307956872408" type="personagemJogavel1">
                                     <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_morto&quot;</param>
-                                    <param id="1" name="From">1</param>
+                                    <param id="1" name="From">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -425,7 +425,7 @@
                                     <actions>
                                         <action id="4" name="Set animation" sid="806393337913923" type="personagemJogavel2">
                                             <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_morte&quot;</param>
-                                            <param id="1" name="From">1</param>
+                                            <param id="1" name="From">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -438,7 +438,7 @@
                                     <actions>
                                         <action id="4" name="Set animation" sid="186687491992653" type="personagemJogavel2">
                                             <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_morto&quot;</param>
-                                            <param id="1" name="From">1</param>
+                                            <param id="1" name="From">0</param>
                                         </action>
                                     </actions>
                                 </event-block>

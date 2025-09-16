@@ -476,6 +476,43 @@
                     <frame duration="1" hotspotX="0.640523" hotspotY="0.986111" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0046.png" />
                     <frame duration="1" hotspotX="0.64497" hotspotY="0.986667" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0047.png" />
                 </animation>
+                <animation framecount="10" loop="0" name="espada_morte" pingpong="0" repeatcount="1" repeatto="0" sid="324081547693559" speed="12">
+                    <frame duration="1" hotspotX="0.142857" hotspotY="0.987097" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0052.png" />
+                    <frame duration="1" hotspotX="0.230769" hotspotY="1" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0053.png" />
+                    <frame duration="1" hotspotX="0.220588" hotspotY="0.958824" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0054.png" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.969325" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0055.png" />
+                    <frame duration="1" hotspotX="0.486301" hotspotY="0.993827" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0056.png" />
+                    <frame duration="1" hotspotX="0.521212" hotspotY="0.989305" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0057.png" />
+                    <frame duration="1" hotspotX="0.496732" hotspotY="0.992481" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0058.png" />
+                    <frame duration="1" hotspotX="0.490909" hotspotY="0.97561" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0059.png" />
+                    <frame duration="1" hotspotX="0.479638" hotspotY="0.981481" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0060.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.962617" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0061.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="espada_morto" pingpong="0" repeatcount="1" repeatto="0" sid="118086551731929" speed="12">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.962617" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0061.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="desarmado_morte" pingpong="0" repeatcount="1" repeatto="0" sid="589885397691139" speed="12">
+                    <frame duration="1" hotspotX="0.20354" hotspotY="0.987097" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0052.png" />
+                    <frame duration="1" hotspotX="0.182609" hotspotY="0.980263" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0053.png" />
+                    <frame duration="1" hotspotX="0.336449" hotspotY="0.982353" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0054.png" />
+                    <frame duration="1" hotspotX="0.581818" hotspotY="0.993865" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0055.png" />
+                    <frame duration="1" hotspotX="0.460993" hotspotY="0.983871" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0056.png" />
+                    <frame duration="1" hotspotX="0.460606" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0057.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.95283" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0058.png" />
+                    <frame duration="1" hotspotX="0.49697" hotspotY="0.963964" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0059.png" />
+                    <frame duration="1" hotspotX="0.49711" hotspotY="0.981481" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0060.png" />
+                    <frame duration="1" hotspotX="0.511236" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="desarmado_morto" pingpong="0" repeatcount="1" repeatto="0" sid="305153086249974" speed="12">
+                    <frame duration="1" hotspotX="0.516854" hotspotY="0.981308" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png">
+                        <collision-poly>
+                            <point x="0.539326" y="0.261682" />
+                            <point x="0.235955" y="0.0186916" />
+                            <point x="0.539326" y="0.728972" />
+                            <point x="0.011236" y="0.392523" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="personagemJogavel2" sid="490046474075388">
@@ -839,6 +876,36 @@
                             <point x="0.25784" y="0.864865" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="10" loop="0" name="desarmado_morte" pingpong="0" repeatcount="1" repeatto="0" sid="509359625923367" speed="5">
+                    <frame duration="1" hotspotX="0.212389" hotspotY="0.980645" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0052.png" />
+                    <frame duration="1" hotspotX="0.191304" hotspotY="1" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0053.png" />
+                    <frame duration="1" hotspotX="0.308411" hotspotY="0.988235" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0054.png" />
+                    <frame duration="1" hotspotX="0.518182" hotspotY="0.98773" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0055.png" />
+                    <frame duration="1" hotspotX="0.631206" hotspotY="1" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0056.png" />
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0057.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0058.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0059.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0060.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="desarmado_morto" pingpong="0" repeatcount="1" repeatto="0" sid="389571895581396" speed="5">
+                    <frame duration="1" hotspotX="0.550562" hotspotY="0.981308" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="espada_morte" pingpong="0" repeatcount="1" repeatto="0" sid="212939907633319" speed="12">
+                    <frame duration="1" hotspotX="0.222222" hotspotY="0.993548" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0052.png" />
+                    <frame duration="1" hotspotX="0.316239" hotspotY="0.986842" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0053.png" />
+                    <frame duration="1" hotspotX="0.375" hotspotY="0.976471" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0054.png" />
+                    <frame duration="1" hotspotX="0.467949" hotspotY="1.00613" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0055.png" />
+                    <frame duration="1" hotspotX="0.479452" hotspotY="0.993827" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0056.png" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.989305" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0057.png" />
+                    <frame duration="1" hotspotX="0.535948" hotspotY="0.992481" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0058.png" />
+                    <frame duration="1" hotspotX="0.527273" hotspotY="0.98374" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0059.png" />
+                    <frame duration="1" hotspotX="0.524887" hotspotY="0.990741" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0060.png" />
+                    <frame duration="1" hotspotX="0.486275" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0061.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="espada_morto" pingpong="0" repeatcount="1" repeatto="0" sid="550073348909129" speed="12">
+                    <frame duration="1" hotspotX="0.482353" hotspotY="1" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0061.png" />
                 </animation>
             </animation-folder>
         </object-type>
