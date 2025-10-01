@@ -877,7 +877,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="10" loop="0" name="desarmado_morte" pingpong="0" repeatcount="1" repeatto="0" sid="509359625923367" speed="5">
+                <animation framecount="10" loop="0" name="desarmado_morte" pingpong="0" repeatcount="1" repeatto="0" sid="509359625923367" speed="12">
                     <frame duration="1" hotspotX="0.212389" hotspotY="0.980645" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0052.png" />
                     <frame duration="1" hotspotX="0.191304" hotspotY="1" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0053.png" />
                     <frame duration="1" hotspotX="0.308411" hotspotY="0.988235" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0054.png" />
@@ -889,7 +889,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0060.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png" />
                 </animation>
-                <animation framecount="1" loop="0" name="desarmado_morto" pingpong="0" repeatcount="1" repeatto="0" sid="389571895581396" speed="5">
+                <animation framecount="1" loop="0" name="desarmado_morto" pingpong="0" repeatcount="1" repeatto="0" sid="389571895581396" speed="12">
                     <frame duration="1" hotspotX="0.550562" hotspotY="0.981308" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png" />
                 </animation>
                 <animation framecount="10" loop="0" name="espada_morte" pingpong="0" repeatcount="1" repeatto="0" sid="212939907633319" speed="12">

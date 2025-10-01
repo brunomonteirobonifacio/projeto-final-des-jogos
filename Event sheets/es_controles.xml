@@ -6,6 +6,7 @@
         <comment>As event sheets de todas as fases devem incluir essa no início, para que seja necessário alterar as movimentações dos personagens jogáveis e o comportamento das armas só aqui e as event sheets das fases conterão apenas a lógica do spawn das armas, etc</comment>
         <comment>As teclas que ativam cada controle estão em colisaoJogador1 e colisaoJogador2, com os mesmos nomes que nos eventos abaixo</comment>
         <comment>É usado o KeyCode ao invés de Key porque assim podem ser usadas variáveis ao invés de apenas valores fixos. Isso facilita também para criação de configurações que alterem os controles</comment>
+
         <event-group description="" sid="339431123013254" title="Controles Jogadores">
             <sub-events>
                 <event-block sid="841855568089003">
@@ -39,6 +40,7 @@
                         </action>
                     </actions>
                 </event-block>
+
                 <event-block sid="591988295038111">
                     <conditions>
                         <condition id="-11" name="For Each" sid="978333503324906" type="System">
@@ -51,6 +53,24 @@
                             <conditions>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="810707664928969" type="colisaoJogador">
                                     <param id="0" name="Instance variable">atacando</param>
+                                </condition>
+
+                                <!-- FIX: bloquear controles se QUALQUER jogador morrer -->
+                                <condition id="-7" name="Compare instance variable" sid="FIX001" type="colisaoJogador1">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="FIX002" type="colisaoJogador2">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <!-- (opcional, também garante que o próprio seja vivo) -->
+                                <condition id="-7" name="Compare instance variable" sid="FIX003" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -101,6 +121,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+
                 <comment>Precisa ser separado pois o evento key pressed não pode ser executado dentro de um forEach</comment>
                 <event-block sid="940455502336764">
                     <conditions>
@@ -118,6 +139,23 @@
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="459088797167475" type="colisaoJogador">
                                     <param id="0" name="Instance variable">atacando</param>
                                 </condition>
+
+                                <!-- FIX: só permite iniciar ataque se ambos estiverem vivos -->
+                                <condition id="-7" name="Compare instance variable" sid="FIX004" type="colisaoJogador1">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="FIX005" type="colisaoJogador2">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="FIX006" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-13" name="Set boolean" sid="592934245720641" type="colisaoJogador">
@@ -130,6 +168,7 @@
                 </event-block>
             </sub-events>
         </event-group>
+
         <comment>TODO: Atualmente nesse grupo a lógica dos jogadores 1 e 2 está dividida, verificar se tem como unifciar</comment>
         <event-group description="" sid="121797552578729" title="Sprites Jogadores">
             <sub-events>
@@ -154,48 +193,55 @@
                         </action>
                     </actions>
                 </event-block>
+
                 <event-group description="" sid="201841804216944" title="Ataque e Movimentacao">
                     <sub-events>
-                        <comment>TODO: Implementar animação de morte</comment>
-                        <event-block sid="833934837038510">
+                        <comment>JOGADOR 1 - Logica de morte e animacoes</comment>
+                        <event-block sid="312225551108393">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="849219207158631" type="colisaoJogador">
+                                <condition id="-7" name="Compare instance variable" sid="545946628915025" type="colisaoJogador1">
                                     <param id="0" name="Instance variable">vida</param>
                                     <param id="1" name="Comparison">3</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
+                                <condition id="-4" name="Trigger once while true" sid="838319620348101" type="System" />
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="11" name="Set enabled" sid="856780452400510" type="colisaoJogador">
+                                <action behavior="Platform" id="11" name="Set enabled" sid="856780452400510" type="colisaoJogador1">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="248319670058493" type="colisaoJogador">
+                                <action id="-13" name="Set boolean" sid="248319670058493" type="colisaoJogador1">
                                     <param id="0" name="Instance variable">atacando</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="4" name="Set animation" sid="772079654166355" type="personagemJogavel1">
+                                    <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_morte&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
                             </actions>
+
+                            <!-- FIX: destruir colisor de arma do J1 ao morrer -->
                             <sub-events>
-                                <event-block sid="312225551108393">
+                                <event-block sid="FIX007">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="545946628915025" type="colisaoJogador1">
-                                            <param id="0" name="Instance variable">vida</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">0</param>
+                                        <condition id="-33" name="Pick by comparison" sid="FIX007A" type="System">
+                                            <param id="0" name="Object">colisaoArma</param>
+                                            <param id="1" name="Expression">colisaoArma.jogadorSegurandoUID</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">colisaoJogador1.UID</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="772079654166355" type="personagemJogavel1">
-                                            <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_morte&quot;</param>
-                                            <param id="1" name="From">0</param>
-                                        </action>
+                                        <action id="-9" name="Destroy" sid="FIX007B" type="colisaoArma" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
+
                         <event-block sid="735369237424036">
                             <conditions>
                                 <condition id="4" name="On finished" sid="881234504633989" type="personagemJogavel1">
-                                    <param id="0" name="Animation">&quot;morte&quot;</param>
+                                    <param id="0" name="Animation">colisaoJogador1.armaAtual &amp; &quot;_morte&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -205,26 +251,14 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="209084824867786">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="841179462624986" type="colisaoJogador">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="726771479710386" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-2" name="Go to layout" sid="428919834219847" type="System">
-                                    <param id="0" name="Layout">menuPrincipal</param>
-                                </action>
-                            </actions>
-                        </event-block>
+
                         <event-block sid="135559179540373">
                             <conditions>
-                                <condition id="-22" name="Else" sid="764232473341014" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="764232473341014" type="colisaoJogador1">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions />
                             <sub-events>
@@ -258,6 +292,7 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+
                                 <event-block sid="455729151852140">
                                     <conditions>
                                         <condition id="-8" name="Is boolean instance variable set" sid="230928019696699" type="colisaoJogador1">
@@ -321,6 +356,7 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
+
                                         <event-block sid="920824202062061">
                                             <conditions>
                                                 <condition id="3" name="Compare frame" sid="261760290562305" type="personagemJogavel1">
@@ -339,6 +375,7 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+
                                 <event-block sid="905013527641982">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="640380129667209" type="System" />
@@ -395,75 +432,70 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <comment>TODO: Implementar animação de morte</comment>
-                        <event-block sid="107361813031345">
+
+                        <comment>JOGADOR 2 - Logica de morte e animacoes</comment>
+                        <event-block sid="283790948824665">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="870121009061282" type="colisaoJogador">
+                                <condition id="-7" name="Compare instance variable" sid="171780244833096" type="colisaoJogador2">
                                     <param id="0" name="Instance variable">vida</param>
                                     <param id="1" name="Comparison">3</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
+                                <condition id="-4" name="Trigger once while true" sid="560812212772769" type="System" />
                             </conditions>
                             <actions>
-                                <action behavior="Platform" id="11" name="Set enabled" sid="277723517807566" type="colisaoJogador">
+                                <action behavior="Platform" id="11" name="Set enabled" sid="277723517807566" type="colisaoJogador2">
                                     <param id="0" name="State">0</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="709985643279962" type="colisaoJogador">
+                                <action id="-13" name="Set boolean" sid="134050058990983" type="colisaoJogador2">
                                     <param id="0" name="Instance variable">atacando</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="4" name="Set animation" sid="806393337913923" type="personagemJogavel2">
+                                    <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_morte&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
                             </actions>
+
+                            <!-- FIX: destruir colisor de arma do J2 ao morrer -->
                             <sub-events>
-                                <event-block sid="283790948824665">
+                                <event-block sid="FIX008">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="171780244833096" type="colisaoJogador2">
-                                            <param id="0" name="Instance variable">vida</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">0</param>
+                                        <condition id="-33" name="Pick by comparison" sid="FIX008A" type="System">
+                                            <param id="0" name="Object">colisaoArma</param>
+                                            <param id="1" name="Expression">colisaoArma.jogadorSegurandoUID</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">colisaoJogador2.UID</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="4" name="Set animation" sid="806393337913923" type="personagemJogavel2">
-                                            <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_morte&quot;</param>
-                                            <param id="1" name="From">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="162662373800964">
-                                    <conditions>
-                                        <condition id="4" name="On finished" sid="115852154151270" type="personagemJogavel2">
-                                            <param id="0" name="Animation">&quot;morte&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="4" name="Set animation" sid="186687491992653" type="personagemJogavel2">
-                                            <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_morto&quot;</param>
-                                            <param id="1" name="From">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="660542495860875">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="411949019231950" type="colisaoJogador">
-                                            <param id="0" name="Instance variable">vida</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-16" name="Wait" sid="166265011050813" type="System">
-                                            <param id="0" name="Seconds">2</param>
-                                        </action>
-                                        <action id="-2" name="Go to layout" sid="409406458634495" type="System">
-                                            <param id="0" name="Layout">menuPrincipal</param>
-                                        </action>
+                                        <action id="-9" name="Destroy" sid="FIX008B" type="colisaoArma" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
+
+                        <event-block sid="748592651230445">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="339871520184967" type="personagemJogavel2">
+                                    <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_morte&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="891264083471920" type="personagemJogavel2">
+                                    <param id="0" name="Animation">colisaoJogador2.armaAtual &amp; &quot;_morto&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+
                         <event-block sid="465937482428195">
                             <conditions>
-                                <condition id="-22" name="Else" sid="188186719894570" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="188186719894570" type="colisaoJogador2">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
                             </conditions>
                             <actions />
                             <sub-events>
@@ -510,6 +542,7 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
+
                                         <event-block sid="704048180074751">
                                             <conditions>
                                                 <condition id="3" name="Compare frame" sid="246995402107476" type="personagemJogavel2">
@@ -560,6 +593,7 @@
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
+
                                         <event-block sid="807931726463449">
                                             <conditions>
                                                 <condition id="3" name="Compare frame" sid="314990606562407" type="personagemJogavel2">
@@ -578,6 +612,7 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+
                                 <event-block sid="718323250150667">
                                     <conditions>
                                         <condition id="-22" name="Else" sid="950765527564241" type="System" />
@@ -621,7 +656,7 @@
                                         </event-block>
                                         <event-block sid="922840783757506">
                                             <conditions>
-                                                <condition id="-22" name="Else" sid="853674617215745" type="System" />
+                                                <condition id="-22" name="Else" sid="976117511344240" type="System" />
                                             </conditions>
                                             <actions>
                                                 <action id="4" name="Set animation" sid="886722937814865" type="personagemJogavel2">
@@ -634,10 +669,31 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+
+                        <comment>Retorno ao menu quando algum jogador morre</comment>
+                        <event-block sid="209084824867786">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="841179462624986" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="726771479710387" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="726771479710386" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="428919834219847" type="System">
+                                    <param id="0" name="Layout">menuPrincipal</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
         </event-group>
+
         <event-group description="" sid="286991704295405" title="Armas">
             <sub-events>
                 <event-block sid="576742448284552">
@@ -681,6 +737,7 @@
                                 </action>
                             </actions>
                         </event-block>
+
                         <event-block sid="910907090716680">
                             <conditions>
                                 <condition id="1" name="On any key pressed" sid="184518880112017" type="Keyboard" />
@@ -731,6 +788,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+
                         <event-block sid="109754348885541">
                             <conditions>
                                 <condition id="1" inverted="1" name="Is overlapping another object" sid="245397315239754" type="colisaoJogador">
@@ -751,6 +809,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+
                 <event-block sid="522584325310538">
                     <conditions>
                         <condition id="-7" name="Compare instance variable" sid="907826495470116" type="colisaoJogador">
@@ -779,12 +838,13 @@
                         </action>
                         <action id="-10" name="Set value" sid="907406444452677" type="colisaoJogador">
                             <param id="0" name="Instance variable">durabilidadeArmaAtual</param>
-                            <param id="1" name="Value">coletavelArma.durabilidade</param>
+                            <param id="1" name="Value">desarmado.durabilidade</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+
         <event-group description="" sid="552160011171342" title="Colisao ataque">
             <sub-events>
                 <comment>TODO: fazer knockback e animação do jogador que levou dano</comment>
@@ -797,6 +857,12 @@
                             <param id="0" name="Instance variable">jogadorSegurandoUID</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">colisaoJogador.UID</param>
+                        </condition>
+                        <!-- FIX: não aplicar dano em quem já está morto -->
+                        <condition id="-7" name="Compare instance variable" sid="FIX009" type="colisaoJogador">
+                            <param id="0" name="Instance variable">vida</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
