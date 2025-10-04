@@ -106,6 +106,7 @@
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                         <danoArmaAtual>0</danoArmaAtual>
+                        <animacaoSpriteUID>0</animacaoSpriteUID>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -157,6 +158,7 @@
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                         <danoArmaAtual>0</danoArmaAtual>
+                        <animacaoSpriteUID>0</animacaoSpriteUID>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -270,7 +272,7 @@
                 </instance>
                 <instance type="colisaoArma" uid="10">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>

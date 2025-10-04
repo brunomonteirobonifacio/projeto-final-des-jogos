@@ -1044,6 +1044,7 @@
                 <instance-variable comment='Após quantos golpes a arma atual &quot;quebra&quot;' name="durabilidadeArmaAtual" sid="319059180552522" type="number" />
                 <instance-variable name="distanciaHorizontalColisaoArmaAtual" sid="661541964273759" type="number" />
                 <instance-variable name="danoArmaAtual" sid="144117770340174" type="number" />
+                <instance-variable name="animacaoSpriteUID" sid="126037840034892" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">
