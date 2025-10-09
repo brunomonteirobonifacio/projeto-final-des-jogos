@@ -11,9 +11,11 @@
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
@@ -1025,6 +1027,39 @@
             <texture />
             <tiles />
         </object-type>
+        <object-type name="Function" sid="454793912589984">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="vidaFundo" sid="313923518438166">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741178090740470" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\gianl\OneDrive\Área de Trabalho\HUD\BarraVida.png">
+                        <collision-poly>
+                            <point x="0.01875" y="0.166667" />
+                            <point x="0.5" y="0.0555556" />
+                            <point x="0.98125" y="0.166667" />
+                            <point x="0.99375" y="0.5" />
+                            <point x="0.98125" y="0.833333" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.01875" y="0.833333" />
+                            <point x="0.00625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vidaBarra" sid="890008633112043">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="donoUID" sid="823048534146091" type="number" />
+            </instance-variables>
+            <texture original-source="C:\Users\gianl\OneDrive\Área de Trabalho\HUD\BarraVidaConteudo.png" />
+        </object-type>
+        <object-type name="vidaAtras" sid="944358185905492">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\gianl\OneDrive\Área de Trabalho\HUD\BarraVidaAtras.png" />
+        </object-type>
     </object-folder>
     <families>
         <family name="colisaoJogador" plugin-id="Sprite" sid="882947211568261">
@@ -1113,6 +1148,7 @@
             </properties>
         </global-instance>
         <global-instance type="Mouse" uid="24" />
+        <global-instance type="Function" uid="27" />
     </global-instances>
     <sounds-folder>
         <file name="crazy-train-8bit.ogg" />

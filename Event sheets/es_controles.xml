@@ -104,6 +104,29 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="391363534006443">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="436702132877499" type="System">
+                                    <param id="0" name="Object">vidaBarra</param>
+                                    <param id="1" name="Expression">vidaBarra.donoUID</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                                <condition id="-13" name="Pick nth instance" sid="534502893063424" type="System">
+                                    <param id="0" name="Object">vidaBarra</param>
+                                    <param id="1" name="Instance">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="766130216175528" type="vidaBarra">
+                                    <param id="0" name="Instance variable">donoUID</param>
+                                    <param id="1" name="Value">colisaoJogador.UID</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="491153544223269" type="vidaBarra">
+                                    <param id="0" name="Width">colisaoJogador.vida</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <comment>Precisa ser separado pois o evento key pressed não pode ser executado dentro de um forEach</comment>
@@ -186,7 +209,11 @@
                                     <param id="3" name="Value">colisaoJogador.animacaoSpriteUID</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-5" name="Set width" sid="145190811671360" type="vidaBarra">
+                                    <param id="0" name="Width">colisaoJogador.vida</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="893372502563997">
                                     <conditions>
