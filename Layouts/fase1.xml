@@ -106,6 +106,7 @@
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                         <danoArmaAtual>0</danoArmaAtual>
+                        <animacaoSpriteUID>0</animacaoSpriteUID>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -157,6 +158,7 @@
                         <durabilidadeArmaAtual>0</durabilidadeArmaAtual>
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                         <danoArmaAtual>0</danoArmaAtual>
+                        <animacaoSpriteUID>0</animacaoSpriteUID>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -270,7 +272,7 @@
                 </instance>
                 <instance type="colisaoArma" uid="10">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -696,6 +698,136 @@
                         <depth>0</depth>
                         <hotspotX>0.526315808</hotspotX>
                         <hotspotY>0.523809552</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="vidaFundo" uid="28">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>160</width>
+                        <height>18</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="vidaAtras" uid="30">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>61</x>
+                        <y>24</y>
+                        <z>0</z>
+                        <width>0</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="vidaBarra" uid="29">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <donoUID>0</donoUID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>61</x>
+                        <y>24</y>
+                        <z>0</z>
+                        <width>0</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="vidaFundo" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>668</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>160</width>
+                        <height>18</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="vidaBarra" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <instance-variables>
+                        <donoUID>0</donoUID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>709</x>
+                        <y>24</y>
+                        <z>0</z>
+                        <width>0</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="vidaAtras" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>709</x>
+                        <y>24</y>
+                        <z>0</z>
+                        <width>0</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
