@@ -163,7 +163,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <comment>TODO: Atualmente nesse grupo a lógica dos jogadores 1 e 2 está dividida, verificar se tem como unifciar</comment>
         <event-group description="" sid="121797552578729" title="Sprites Jogadores">
             <sub-events>
                 <event-block sid="600751200711066">
