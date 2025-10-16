@@ -52,6 +52,9 @@
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="810707664928969" type="colisaoJogador">
                                     <param id="0" name="Instance variable">atacando</param>
                                 </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="284310107683834" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">levandoDano</param>
+                                </condition>
                                 <condition id="-7" name="Compare instance variable" sid="0" type="colisaoJogador">
                                     <param id="0" name="Instance variable">vida</param>
                                     <param id="1" name="Comparison">4</param>
@@ -323,6 +326,16 @@
                                                     </actions>
                                                 </event-block>
                                             </sub-events>
+                                        </event-block>
+                                        <comment>TODO: adicionar animação de levando dano e definir a flag como false quando a animação acabar</comment>
+                                        <event-block sid="917052302780231">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="536865174243737" type="System" />
+                                                <condition id="-8" name="Is boolean instance variable set" sid="264679444900458" type="colisaoJogador">
+                                                    <param id="0" name="Instance variable">levandoDano</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
                                         </event-block>
                                         <event-block sid="890938550103341">
                                             <conditions>
@@ -644,7 +657,49 @@
                             <param id="0" name="Instance variable">vida</param>
                             <param id="1" name="Value">colisaoArma.dano</param>
                         </action>
+                        <action id="-13" name="Set boolean" sid="328486610333690" type="colisaoJogador">
+                            <param id="0" name="Instance variable">levandoDano</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="287827421777409" type="colisaoJogador">
+                            <param id="0" name="Vector Y">-250</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="212957287549092">
+                            <conditions>
+                                <condition id="8" name="Is flipped" sid="190801614055164" type="colisaoArma" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="758754621609716" type="colisaoJogador">
+                                    <param id="0" name="Vector X">-250</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="925576282021788">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="518143417307233" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="263129686306188" type="colisaoJogador">
+                                    <param id="0" name="Vector X">350</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>TODO: quando a animação de dano for implementada, a flag levandoDano deverá ser definida para false apenas quando a animação de dano acabar</comment>
+                        <event-block sid="749687372537086">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="962563714268237" type="System">
+                                    <param id="0" name="Seconds">0.7</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="214256090307512" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">levandoDano</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

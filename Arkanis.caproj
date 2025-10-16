@@ -1080,6 +1080,7 @@
                 <instance-variable name="distanciaHorizontalColisaoArmaAtual" sid="661541964273759" type="number" />
                 <instance-variable name="danoArmaAtual" sid="144117770340174" type="number" />
                 <instance-variable name="animacaoSpriteUID" sid="126037840034892" type="number" />
+                <instance-variable name="levandoDano" sid="514526292318596" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="484187777744374">

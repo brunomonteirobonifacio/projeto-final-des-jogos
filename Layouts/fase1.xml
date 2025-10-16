@@ -107,6 +107,7 @@
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                         <danoArmaAtual>0</danoArmaAtual>
                         <animacaoSpriteUID>0</animacaoSpriteUID>
+                        <levandoDano>false</levandoDano>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -159,6 +160,7 @@
                         <distanciaHorizontalColisaoArmaAtual>32</distanciaHorizontalColisaoArmaAtual>
                         <danoArmaAtual>0</danoArmaAtual>
                         <animacaoSpriteUID>0</animacaoSpriteUID>
+                        <levandoDano>false</levandoDano>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
@@ -202,7 +204,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>17</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -310,7 +312,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>18</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -339,7 +341,7 @@
                         <tipoArma>desarmado</tipoArma>
                         <durabilidade>0</durabilidade>
                         <distanciaHorizontalColisaoArma>32</distanciaHorizontalColisaoArma>
-                        <dano>5</dano>
+                        <dano>15</dano>
                         <decoracaoUID>0</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -368,7 +370,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>21</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -397,7 +399,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>19</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -426,7 +428,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>20</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
