@@ -38,7 +38,37 @@
                             <param id="1" name="Value">desarmado.dano</param>
                         </action>
                     </actions>
-                </event-block>
+                    <sub-events>
+                        <event-block sid="100000000000001" title="Bind vidaBarra[0] to colisaoJogador1">
+                            <conditions>
+                                <condition id="-13" name="Pick nth instance" sid="100000000000002" type="System">
+                                    <param id="0" name="Object">vidaBarra</param>
+                                    <param id="1" name="Instance">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="100000000000003" type="vidaBarra">
+                                    <param id="0" name="Instance variable">donoUID</param>
+                                    <param id="1" name="Value">colisaoJogador1.UID</param>
+                                </action>
+</actions>
+                        </event-block>
+                        <event-block sid="100000000000005" title="Bind vidaBarra[1] to colisaoJogador2">
+                            <conditions>
+                                <condition id="-13" name="Pick nth instance" sid="100000000000006" type="System">
+                                    <param id="0" name="Object">vidaBarra</param>
+                                    <param id="1" name="Instance">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="100000000000007" type="vidaBarra">
+                                    <param id="0" name="Instance variable">donoUID</param>
+                                    <param id="1" name="Value">colisaoJogador2.UID</param>
+                                </action>
+</actions>
+                        </event-block>
+                    </sub-events>
+</event-block>
                 <event-block sid="591988295038111">
                     <conditions>
                         <condition id="-11" name="For Each" sid="978333503324906" type="System">
@@ -107,30 +137,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="391363534006443">
-                            <conditions>
-                                <condition id="-33" name="Pick by comparison" sid="436702132877499" type="System">
-                                    <param id="0" name="Object">vidaBarra</param>
-                                    <param id="1" name="Expression">vidaBarra.donoUID</param>
-                                    <param id="2" name="Comparison">0</param>
-                                    <param id="3" name="Value">0</param>
-                                </condition>
-                                <condition id="-13" name="Pick nth instance" sid="534502893063424" type="System">
-                                    <param id="0" name="Object">vidaBarra</param>
-                                    <param id="1" name="Instance">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="766130216175528" type="vidaBarra">
-                                    <param id="0" name="Instance variable">donoUID</param>
-                                    <param id="1" name="Value">colisaoJogador.UID</param>
-                                </action>
-                                <action id="-5" name="Set width" sid="491153544223269" type="vidaBarra">
-                                    <param id="0" name="Width">colisaoJogador.vida</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+</sub-events>
                 </event-block>
                 <comment>Precisa ser separado pois o evento key pressed não pode ser executado dentro de um forEach</comment>
                 <event-block sid="940455502336764">
@@ -212,11 +219,24 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-5" name="Set width" sid="145190811671360" type="vidaBarra">
-                                    <param id="0" name="Width">colisaoJogador.vida</param>
-                                </action>
-                            </actions>
+</actions>
                             <sub-events>
+                                <event-block sid="100000000000020" title="Atualiza barra correta do dono">
+                                    <conditions>
+                                        <condition id="-33" name="Pick by comparison" sid="100000000000021" type="System">
+                                            <param id="0" name="Object">vidaBarra</param>
+                                            <param id="1" name="Expression">vidaBarra.donoUID</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">colisaoJogador.UID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-5" name="Set width" sid="100000000000022" type="vidaBarra">
+                                            <param id="0" name="Width">max(0, colisaoJogador.vida)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+
                                 <event-block sid="893372502563997">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="555900316060790" type="colisaoJogador">
