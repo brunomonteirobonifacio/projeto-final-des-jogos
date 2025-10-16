@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">fase1</layout>
-        <layout order="3">menuPrincipal</layout>
-        <event-sheet active="1" order="2">es_controles</event-sheet>
-        <event-sheet order="4">es_fase1</event-sheet>
-        <event-sheet order="5">es_menuPrincipal</event-sheet>
+        <layout order="0">fase1</layout>
+        <layout order="2">menuPrincipal</layout>
+        <event-sheet active="1" order="1">es_controles</event-sheet>
+        <event-sheet order="3">es_fase1</event-sheet>
+        <event-sheet order="4">es_menuPrincipal</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

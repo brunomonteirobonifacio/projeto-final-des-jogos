@@ -309,22 +309,6 @@
                                                         </event-block>
                                                     </sub-events>
                                                 </event-block>
-                                                <event-block sid="997725466332264">
-                                                    <conditions>
-                                                        <condition id="3" name="Compare frame" sid="197494285013954" type="animacaoJogador">
-                                                            <param id="0" name="Comparison">0</param>
-                                                            <param id="1" name="Number">9</param>
-                                                        </condition>
-                                                        <condition id="-7" name="Compare instance variable" sid="786609582933025" type="colisaoArma">
-                                                            <param id="0" name="Instance variable">jogadorSegurandoUID</param>
-                                                            <param id="1" name="Comparison">0</param>
-                                                            <param id="2" name="Value">colisaoJogador.UID</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="-9" name="Destroy" sid="202319353511126" type="colisaoArma" />
-                                                    </actions>
-                                                </event-block>
                                             </sub-events>
                                         </event-block>
                                         <comment>TODO: adicionar animação de levando dano e definir a flag como false quando a animação acabar</comment>
@@ -428,6 +412,18 @@
                                                 </action>
                                             </actions>
                                             <sub-events>
+                                                <event-block sid="629650343221839">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="938289121577571" type="colisaoArma">
+                                                            <param id="0" name="Instance variable">jogadorSegurandoUID</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">colisaoJogador.UID</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Destroy" sid="186376941282993" type="colisaoArma" />
+                                                    </actions>
+                                                </event-block>
                                                 <event-block sid="340498965999663">
                                                     <conditions>
                                                         <condition id="-7" name="Compare instance variable" sid="971670533930855" type="colisaoJogador">
@@ -668,11 +664,11 @@
                     <sub-events>
                         <event-block sid="212957287549092">
                             <conditions>
-                                <condition id="8" name="Is flipped" sid="190801614055164" type="colisaoArma" />
+                                <condition id="7" name="Is mirrored" sid="190801614055164" type="colisaoArma" />
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="8" name="Set vector X" sid="758754621609716" type="colisaoJogador">
-                                    <param id="0" name="Vector X">-250</param>
+                                    <param id="0" name="Vector X">-350</param>
                                 </action>
                             </actions>
                         </event-block>
