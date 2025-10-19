@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">fase1</layout>
-        <layout order="3">menuPrincipal</layout>
-        <event-sheet active="1" order="2">es_controles</event-sheet>
-        <event-sheet order="4">es_fase1</event-sheet>
-        <event-sheet order="5">es_menuPrincipal</event-sheet>
+        <layout active="1" order="0">fase1</layout>
+        <layout order="2">menuPrincipal</layout>
+        <event-sheet order="1">es_controles</event-sheet>
+        <event-sheet order="3">es_fase1</event-sheet>
+        <event-sheet order="4">es_menuPrincipal</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,11 +23,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="colisaoJogador" />
+        <family expanded="1" name="colisaoJogador" />
         <family expanded="1" name="coletavelArma" />
         <family expanded="1" name="animacaoJogador" />
-        <family expanded="0" name="key" />
-        <family expanded="0" name="coletavelArmaDecoracao" />
+        <family expanded="1" name="key" />
+        <family expanded="1" name="coletavelArmaDecoracao" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -50,8 +50,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/decoracaoColetavelEspada/" />
         <folder expanded="1" path="animation-folder/tituloJogo/" />
         <folder expanded="1" path="animation-folder/botaoJogar/" />
-        <folder expanded="1" path="animation-folder/degradeMenu/" />
         <folder expanded="1" path="animation-folder/jogadorVencedor/" />
         <folder expanded="1" path="animation-folder/vidaFundo/" />
+        <folder expanded="1" path="animation-folder/decoracaoCenarioFundo/" />
     </folders-expanded>
 </c2uistate>

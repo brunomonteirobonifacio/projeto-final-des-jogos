@@ -28,7 +28,7 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
+        <width>1072</width>
         <height>480</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
@@ -1002,14 +1002,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="degradeMenu" sid="775986343725659">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="717797435415647" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Mouse" sid="400956626850164">
             <plugin id="Mouse" />
         </object-type>
@@ -1021,11 +1013,6 @@
                     <frame duration="1" hotspotX="0.500885" hotspotY="0.50505" original-source="C:\Users\Bruno\Downloads\jogador2Vencedor.png" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="decoracaoChao" sid="430161611455002">
-            <plugin id="Tilemap" />
-            <texture />
-            <tiles />
         </object-type>
         <object-type name="Function" sid="454793912589984">
             <plugin id="Function" />
@@ -1059,6 +1046,24 @@
         <object-type name="vidaAtras" sid="944358185905492">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\gianl\OneDrive\Área de Trabalho\HUD\BarraVidaAtras.png" />
+        </object-type>
+        <object-type name="decoracaoMapa1" sid="384846597166758">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\craftpix-net-436971-free-top-down-roguelike-game-kit-pixel-art\5Tiled_files\Tileset.png" />
+            <tiles />
+        </object-type>
+        <object-type name="decoracaoObjetosMapa1" sid="105980327409019">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\craftpix-net-436971-free-top-down-roguelike-game-kit-pixel-art\5Tiled_files\Objects.png" />
+            <tiles />
+        </object-type>
+        <object-type name="decoracaoCenarioFundo" sid="287618504429938">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497753437400241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\arena-de-gladiadores-romanos-antigos\a223ad73-261d-463d-9788-090aa3d8e530.jpg" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
