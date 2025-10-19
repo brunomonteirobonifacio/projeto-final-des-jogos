@@ -40,7 +40,6 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Loader style">Construct 2 splash</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
@@ -232,12 +231,79 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="5" loop="0" name="desarmado_pulando" pingpong="0" repeatcount="1" repeatto="0" sid="229235298160551" speed="7">
+                    <frame duration="1" hotspotX="0.47619" hotspotY="0.98324" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0044.png" />
+                    <frame duration="1" hotspotX="0.472222" hotspotY="0.98" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0043.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.06" />
+                            <point x="0.37037" y="0.0133333" />
+                            <point x="0.583333" y="0.0133333" />
+                            <point x="0.916667" y="0.166667" />
+                            <point x="0.898148" y="0.546667" />
+                            <point x="0.37037" y="0.913333" />
+                            <point x="0.0277778" y="0.413333" />
+                            <point x="0.0833333" y="0.166667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.476636" hotspotY="0.982659" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0045.png" />
+                    <frame duration="1" hotspotX="0.471698" hotspotY="0.984252" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0046.png" />
+                    <frame duration="1" hotspotX="0.471698" hotspotY="0.98" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0047.png" />
+                </animation>
                 <animation framecount="5" loop="0" name="desarmado_ataque" pingpong="0" repeatcount="1" repeatto="0" sid="713538857356873" speed="12">
                     <frame duration="1" hotspotX="0.694444" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0074.png" />
                     <frame duration="1" hotspotX="0.691824" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0064.png" />
                     <frame duration="1" hotspotX="0.690647" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0065.png" />
                     <frame duration="1" hotspotX="0.689922" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_combo_0066.png" />
                     <frame duration="1" hotspotX="0.694444" hotspotY="1" />
+                </animation>
+                <animation framecount="4" loop="0" name="desarmado_dano" pingpong="0" repeatcount="1" repeatto="0" sid="741090857106700" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_hit_0048.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.00625" />
+                            <point x="1" y="0.00625" />
+                            <point x="1" y="0.99375" />
+                            <point x="0.00925926" y="0.99375" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_hit_0049.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0.00625" />
+                            <point x="1" y="0.00625" />
+                            <point x="1" y="1" />
+                            <point x="0.00925926" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_hit_0050.png">
+                        <collision-poly>
+                            <point x="0.00925926" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00925926" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Fighter sprites\fighter_hit_0051.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="desarmado_morte" pingpong="0" repeatcount="1" repeatto="0" sid="589885397691139" speed="12">
+                    <frame duration="1" hotspotX="0.20354" hotspotY="0.987097" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0052.png" />
+                    <frame duration="1" hotspotX="0.182609" hotspotY="0.980263" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0053.png" />
+                    <frame duration="1" hotspotX="0.336449" hotspotY="0.982353" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0054.png" />
+                    <frame duration="1" hotspotX="0.581818" hotspotY="0.993865" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0055.png" />
+                    <frame duration="1" hotspotX="0.460993" hotspotY="0.983871" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0056.png" />
+                    <frame duration="1" hotspotX="0.460606" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0057.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.95283" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0058.png" />
+                    <frame duration="1" hotspotX="0.49697" hotspotY="0.963964" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0059.png" />
+                    <frame duration="1" hotspotX="0.49711" hotspotY="0.981481" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0060.png" />
+                    <frame duration="1" hotspotX="0.511236" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="desarmado_morto" pingpong="0" repeatcount="1" repeatto="0" sid="305153086249974" speed="12">
+                    <frame duration="1" hotspotX="0.516854" hotspotY="0.981308" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png">
+                        <collision-poly>
+                            <point x="0.539326" y="0.261682" />
+                            <point x="0.235955" y="0.0186916" />
+                            <point x="0.539326" y="0.728972" />
+                            <point x="0.011236" y="0.392523" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="8" loop="1" name="espada_parado" pingpong="0" repeatcount="1" repeatto="0" sid="100413813122181" speed="12">
                     <frame duration="1" hotspotX="0.6875" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_Idle_0001.png">
@@ -357,6 +423,13 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="5" loop="0" name="espada_pulando" pingpong="0" repeatcount="1" repeatto="0" sid="451696826782867" speed="7">
+                    <frame duration="1" hotspotX="0.642045" hotspotY="0.986667" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0043.png" />
+                    <frame duration="1" hotspotX="0.640288" hotspotY="0.988827" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0044.png" />
+                    <frame duration="1" hotspotX="0.642336" hotspotY="0.989247" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0045.png" />
+                    <frame duration="1" hotspotX="0.640523" hotspotY="0.986111" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0046.png" />
+                    <frame duration="1" hotspotX="0.64497" hotspotY="0.986667" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0047.png" />
+                </animation>
                 <animation framecount="4" loop="0" name="espada_ataque" pingpong="0" repeatcount="1" repeatto="0" sid="529730570044915" speed="12">
                     <frame duration="1" hotspotX="0.602787" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_combo_0066.png">
                         <collision-poly>
@@ -391,30 +464,32 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="5" loop="0" name="desarmado_pulando" pingpong="0" repeatcount="1" repeatto="0" sid="229235298160551" speed="7">
-                    <frame duration="1" hotspotX="0.47619" hotspotY="0.98324" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0044.png" />
-                    <frame duration="1" hotspotX="0.472222" hotspotY="0.98" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0043.png">
+                <animation framecount="4" loop="0" name="espada_dano" pingpong="0" repeatcount="1" repeatto="0" sid="241935541239516" speed="15">
+                    <frame duration="1" hotspotX="0.503145" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_hit_0048.png">
                         <collision-poly>
-                            <point x="0.222222" y="0.06" />
-                            <point x="0.37037" y="0.0133333" />
-                            <point x="0.583333" y="0.0133333" />
-                            <point x="0.916667" y="0.166667" />
-                            <point x="0.898148" y="0.546667" />
-                            <point x="0.37037" y="0.913333" />
-                            <point x="0.0277778" y="0.413333" />
-                            <point x="0.0833333" y="0.166667" />
+                            <point x="0.00628931" y="0.00625" />
+                            <point x="0.993711" y="0.00625" />
+                            <point x="0.993711" y="0.99375" />
+                            <point x="0.00628931" y="0.99375" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.476636" hotspotY="0.982659" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0045.png" />
-                    <frame duration="1" hotspotX="0.471698" hotspotY="0.984252" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0046.png" />
-                    <frame duration="1" hotspotX="0.471698" hotspotY="0.98" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_jump_0047.png" />
-                </animation>
-                <animation framecount="5" loop="0" name="espada_pulando" pingpong="0" repeatcount="1" repeatto="0" sid="451696826782867" speed="7">
-                    <frame duration="1" hotspotX="0.642045" hotspotY="0.986667" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0043.png" />
-                    <frame duration="1" hotspotX="0.640288" hotspotY="0.988827" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0044.png" />
-                    <frame duration="1" hotspotX="0.642336" hotspotY="0.989247" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0045.png" />
-                    <frame duration="1" hotspotX="0.640523" hotspotY="0.986111" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0046.png" />
-                    <frame duration="1" hotspotX="0.64497" hotspotY="0.986667" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_jump_0047.png" />
+                    <frame duration="1" hotspotX="0.503145" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_hit_0050.png" />
+                    <frame duration="1" hotspotX="0.503145" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_hit_0049.png">
+                        <collision-poly>
+                            <point x="0.00628931" y="0.00625" />
+                            <point x="0.987421" y="0.00625" />
+                            <point x="0.987421" y="1" />
+                            <point x="0.00628931" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503145" hotspotY="1" original-source="D:\Bruno\Documentos\Trabalhos Eng Soft\4 Periodo\Desenvolvimento de Jogos\Projeto Final\Projeto-final\Assets\Sword sprites\sword_hit_0051.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.993711" y="0" />
+                            <point x="0.993711" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="10" loop="0" name="espada_morte" pingpong="0" repeatcount="1" repeatto="0" sid="324081547693559" speed="12">
                     <frame duration="1" hotspotX="0.142857" hotspotY="0.987097" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0052.png" />
@@ -430,28 +505,6 @@
                 </animation>
                 <animation framecount="1" loop="0" name="espada_morto" pingpong="0" repeatcount="1" repeatto="0" sid="118086551731929" speed="12">
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.962617" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Sword sprites\sword_death_0061.png" />
-                </animation>
-                <animation framecount="10" loop="0" name="desarmado_morte" pingpong="0" repeatcount="1" repeatto="0" sid="589885397691139" speed="12">
-                    <frame duration="1" hotspotX="0.20354" hotspotY="0.987097" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0052.png" />
-                    <frame duration="1" hotspotX="0.182609" hotspotY="0.980263" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0053.png" />
-                    <frame duration="1" hotspotX="0.336449" hotspotY="0.982353" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0054.png" />
-                    <frame duration="1" hotspotX="0.581818" hotspotY="0.993865" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0055.png" />
-                    <frame duration="1" hotspotX="0.460993" hotspotY="0.983871" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0056.png" />
-                    <frame duration="1" hotspotX="0.460606" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0057.png" />
-                    <frame duration="1" hotspotX="0.509804" hotspotY="0.95283" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0058.png" />
-                    <frame duration="1" hotspotX="0.49697" hotspotY="0.963964" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0059.png" />
-                    <frame duration="1" hotspotX="0.49711" hotspotY="0.981481" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0060.png" />
-                    <frame duration="1" hotspotX="0.511236" hotspotY="0.990654" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png" />
-                </animation>
-                <animation framecount="1" loop="0" name="desarmado_morto" pingpong="0" repeatcount="1" repeatto="0" sid="305153086249974" speed="12">
-                    <frame duration="1" hotspotX="0.516854" hotspotY="0.981308" original-source="R:\Arkanis\projeto-final-des-jogos\Assets\Fighter sprites\fighter_death_0061.png">
-                        <collision-poly>
-                            <point x="0.539326" y="0.261682" />
-                            <point x="0.235955" y="0.0186916" />
-                            <point x="0.539326" y="0.728972" />
-                            <point x="0.011236" y="0.392523" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

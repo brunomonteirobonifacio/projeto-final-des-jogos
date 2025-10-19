@@ -39,7 +39,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="100000000000001" title="Bind vidaBarra[0] to colisaoJogador1">
+                        <event-block sid="100000000000001">
                             <conditions>
                                 <condition id="-13" name="Pick nth instance" sid="100000000000002" type="System">
                                     <param id="0" name="Object">vidaBarra</param>
@@ -51,9 +51,9 @@
                                     <param id="0" name="Instance variable">donoUID</param>
                                     <param id="1" name="Value">colisaoJogador1.UID</param>
                                 </action>
-</actions>
+                            </actions>
                         </event-block>
-                        <event-block sid="100000000000005" title="Bind vidaBarra[1] to colisaoJogador2">
+                        <event-block sid="100000000000005">
                             <conditions>
                                 <condition id="-13" name="Pick nth instance" sid="100000000000006" type="System">
                                     <param id="0" name="Object">vidaBarra</param>
@@ -65,10 +65,10 @@
                                     <param id="0" name="Instance variable">donoUID</param>
                                     <param id="1" name="Value">colisaoJogador2.UID</param>
                                 </action>
-</actions>
+                            </actions>
                         </event-block>
                     </sub-events>
-</event-block>
+                </event-block>
                 <event-block sid="591988295038111">
                     <conditions>
                         <condition id="-11" name="For Each" sid="978333503324906" type="System">
@@ -137,7 +137,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-</sub-events>
+                    </sub-events>
                 </event-block>
                 <comment>Precisa ser separado pois o evento key pressed não pode ser executado dentro de um forEach</comment>
                 <event-block sid="940455502336764">
@@ -218,10 +218,9 @@
                                     <param id="3" name="Value">colisaoJogador.animacaoSpriteUID</param>
                                 </condition>
                             </conditions>
-                            <actions>
-</actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="100000000000020" title="Atualiza barra correta do dono">
+                                <event-block sid="100000000000020">
                                     <conditions>
                                         <condition id="-33" name="Pick by comparison" sid="100000000000021" type="System">
                                             <param id="0" name="Object">vidaBarra</param>
@@ -236,7 +235,6 @@
                                         </action>
                                     </actions>
                                 </event-block>
-
                                 <event-block sid="893372502563997">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="555900316060790" type="colisaoJogador">
@@ -339,7 +337,12 @@
                                                     <param id="0" name="Instance variable">levandoDano</param>
                                                 </condition>
                                             </conditions>
-                                            <actions />
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="720336317890209" type="animacaoJogador">
+                                                    <param id="0" name="Animation">colisaoJogador.armaAtual &amp; &quot;_dano&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
                                         </event-block>
                                         <event-block sid="890938550103341">
                                             <conditions>
@@ -473,6 +476,21 @@
                                                 <action id="4" name="Set animation" sid="596354753960188" type="animacaoJogador">
                                                     <param id="0" name="Animation">colisaoJogador.armaAtual &amp; &quot;_morto&quot;</param>
                                                     <param id="1" name="From">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="903765511012930">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="763096946940495" type="System">
+                                                    <param id="0" name="First value">animacaoJogador.AnimationName</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">colisaoJogador.armaAtual &amp; &quot;_dano&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="879222239194417" type="colisaoJogador">
+                                                    <param id="0" name="Instance variable">levandoDano</param>
+                                                    <param id="1" name="Value">0</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -651,7 +669,6 @@
         </event-group>
         <event-group description="" sid="552160011171342" title="Colisao ataque">
             <sub-events>
-                <comment>TODO: fazer knockback e animação do jogador que levou dano</comment>
                 <event-block sid="659729061608089">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="565722801280392" type="colisaoArma">
@@ -699,19 +716,6 @@
                             <actions>
                                 <action behavior="Platform" id="8" name="Set vector X" sid="263129686306188" type="colisaoJogador">
                                     <param id="0" name="Vector X">350</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>TODO: quando a animação de dano for implementada, a flag levandoDano deverá ser definida para false apenas quando a animação de dano acabar</comment>
-                        <event-block sid="749687372537086">
-                            <conditions />
-                            <actions>
-                                <action id="-16" name="Wait" sid="962563714268237" type="System">
-                                    <param id="0" name="Seconds">0.7</param>
-                                </action>
-                                <action id="-13" name="Set boolean" sid="214256090307512" type="colisaoJogador">
-                                    <param id="0" name="Instance variable">levandoDano</param>
-                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
