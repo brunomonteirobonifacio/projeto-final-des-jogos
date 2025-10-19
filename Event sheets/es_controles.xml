@@ -375,27 +375,47 @@
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block sid="934939145154952">
+                                                <event-block any="1" sid="934939145154952">
                                                     <conditions>
-                                                        <condition behavior="Platform" id="0" name="Is moving" sid="301743769587360" type="colisaoJogador" />
+                                                        <condition behavior="Platform" id="3" name="Is jumping" sid="140074942201642" type="colisaoJogador" />
+                                                        <condition behavior="Platform" id="4" name="Is falling" sid="292157580439333" type="colisaoJogador" />
                                                     </conditions>
                                                     <actions>
-                                                        <action id="4" name="Set animation" sid="468663109229243" type="animacaoJogador">
-                                                            <param id="0" name="Animation">colisaoJogador.armaAtual &amp; &quot;_andando&quot;</param>
+                                                        <action id="4" name="Set animation" sid="225485979847094" type="animacaoJogador">
+                                                            <param id="0" name="Animation">colisaoJogador.armaAtual &amp; &quot;_pulando&quot;</param>
                                                             <param id="1" name="From">1</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block sid="259063190928075">
+                                                <event-block sid="178769338852573">
                                                     <conditions>
-                                                        <condition id="-22" name="Else" sid="762157315088691" type="System" />
+                                                        <condition id="-22" name="Else" sid="577411796530255" type="System" />
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="4" name="Set animation" sid="310242369985953" type="animacaoJogador">
-                                                            <param id="0" name="Animation">colisaoJogador.armaAtual &amp; &quot;_parado&quot;</param>
-                                                            <param id="1" name="From">1</param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="995130341167424">
+                                                            <conditions>
+                                                                <condition behavior="Platform" id="0" name="Is moving" sid="301743769587360" type="colisaoJogador" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="468663109229243" type="animacaoJogador">
+                                                                    <param id="0" name="Animation">colisaoJogador.armaAtual &amp; &quot;_andando&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                        <event-block sid="259063190928075">
+                                                            <conditions>
+                                                                <condition id="-22" name="Else" sid="762157315088691" type="System" />
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="4" name="Set animation" sid="310242369985953" type="animacaoJogador">
+                                                                    <param id="0" name="Animation">colisaoJogador.armaAtual &amp; &quot;_parado&quot;</param>
+                                                                    <param id="1" name="From">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
