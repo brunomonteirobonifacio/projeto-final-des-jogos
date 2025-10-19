@@ -175,35 +175,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="coletavelEspada" uid="4">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <tipoArma>espada</tipoArma>
-                        <durabilidade>3</durabilidade>
-                        <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>25</dano>
-                        <decoracaoUID>17</decoracaoUID>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>315</x>
-                        <y>457</y>
-                        <z>0</z>
-                        <width>8</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="personagemJogavel1" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -283,35 +254,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="coletavelEspada" uid="11">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <tipoArma>espada</tipoArma>
-                        <durabilidade>3</durabilidade>
-                        <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>25</dano>
-                        <decoracaoUID>18</decoracaoUID>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>530.526428223</x>
-                        <y>457.466003418</y>
-                        <z>0</z>
-                        <width>8</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="desarmado" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -338,64 +280,6 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="coletavelEspada" uid="14">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <tipoArma>espada</tipoArma>
-                        <durabilidade>3</durabilidade>
-                        <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>25</dano>
-                        <decoracaoUID>21</decoracaoUID>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>798.268127441</x>
-                        <y>250.512741089</y>
-                        <z>0</z>
-                        <width>8</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="coletavelEspada" uid="15">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <tipoArma>espada</tipoArma>
-                        <durabilidade>3</durabilidade>
-                        <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>25</dano>
-                        <decoracaoUID>19</decoracaoUID>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>434.223114014</x>
-                        <y>217.72795105</y>
-                        <z>0</z>
-                        <width>8</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -483,7 +367,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>14</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -534,7 +418,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>15</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -585,7 +469,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>18</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -636,7 +520,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>21</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -687,7 +571,7 @@
                         <tipoArma>espada</tipoArma>
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
-                        <dano>10</dano>
+                        <dano>25</dano>
                         <decoracaoUID>37</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
@@ -934,10 +818,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
-                        <y>32</y>
+                        <x>32.891921997</x>
+                        <y>33.303421021</y>
                         <z>0</z>
-                        <width>151.482940674</width>
+                        <width>151.482925415</width>
                         <height>18</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -954,8 +838,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>71.879455566</x>
-                        <y>24.119873047</y>
+                        <x>63.407897949</x>
+                        <y>25.423294067</y>
                         <z>0</z>
                         <width>-0.000671387</width>
                         <height>16</height>
@@ -977,10 +861,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>71.700950623</x>
-                        <y>24.117540359</y>
+                        <x>69.917655945</x>
+                        <y>25.420959473</y>
                         <z>0</z>
-                        <width>103.012191772</width>
+                        <width>102.924133301</width>
                         <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -999,7 +883,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>892.695068359</x>
+                        <x>885.528442383</x>
                         <y>32</y>
                         <z>0</z>
                         <width>152.27520752</width>
@@ -1022,7 +906,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>930.371826172</x>
+                        <x>923.205200195</x>
                         <y>24.138870239</y>
                         <z>0</z>
                         <width>102.749252319</width>
@@ -1042,7 +926,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>920.557861328</x>
+                        <x>913.391235352</x>
                         <y>24.557846069</y>
                         <z>0</z>
                         <width>0.000061035</width>
