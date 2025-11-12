@@ -70,6 +70,33 @@
                 <tiles />
             </object-type>
         </object-folder>
+        <object-folder name="Fase2">
+            <object-type name="estruturasFase2" sid="766542472212550">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Buildings.png" />
+                <tiles />
+            </object-type>
+            <object-type name="rochasFase2" sid="888766447812473">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Props-Rocks.png" />
+                <tiles />
+            </object-type>
+            <object-type name="arvoresFase2" sid="187814178932707">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Tiles.png" />
+                <tiles />
+            </object-type>
+            <object-type name="folhasFase2" sid="192872302131614">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Tree-Assets.png" />
+                <tiles />
+            </object-type>
+            <object-type name="Tilemap" sid="777846455258097">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Trees\Golden-Tree.png" />
+                <tiles />
+            </object-type>
+        </object-folder>
         <object-type name="colisaoChao" sid="152813904528982">
             <plugin id="Tilemap" />
             <behaviors>
