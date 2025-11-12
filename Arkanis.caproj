@@ -1107,6 +1107,7 @@
     <layout-folder>
         <layout>fase1.xml</layout>
         <layout>menuPrincipal.xml</layout>
+        <layout>fase2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>es_controles.xml</event-sheet>
