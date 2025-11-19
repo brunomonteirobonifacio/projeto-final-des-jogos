@@ -96,6 +96,14 @@
                 <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Trees\Golden-Tree.png" />
                 <tiles />
             </object-type>
+            <object-type name="Sprite" sid="290253992887494">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402083069714593" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Background\Background.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Fase3">
             <object-type name="SnowMap" sid="786565846523636">
