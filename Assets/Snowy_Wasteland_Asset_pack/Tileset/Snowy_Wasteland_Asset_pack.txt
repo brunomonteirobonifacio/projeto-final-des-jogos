@@ -1,0 +1,35 @@
+Snowy Wasteland asset pack
+Author: NonokaATM
+File Type: PNG
+Tile Size: 16x16 px
+Total Tiles: 152 tiles
+
+Usage Notes:
+Designed for platformer games
+- Includes:
+  Terrain Tiles: Snow, snow with ice, ice, cracked ice, footprints, dirt, stone, cracked stone;
+  Transition Blocks: Dirt-to-stone transitions;
+  Vegetation: Trees, bushes, dead trees, flowers;
+  Rock Formations: Snow-covered rocks;
+  Decorations & Objects: Snowdrifts, snowmen, icicles, signs, wooden boxes, barrels, torches, lanterns, lamps, candles, fire, fireplaces;
+  Buildings: Wooden walls, roofs, fences, windows, doors;
+  Backgrounds: Dark forest, mountains, fields;
+
+Compatible with:
+- Godot
+- Unity (with Tilemap system)
+- Any engine that supports 16x16 PNG tiles
+
+License:
+This tileset is for commercial and personal use.
+You may use it in games, videos, or other creative projects.
+Credit is appreciated but not required.
+You may not resell or redistribute the tileset, modified or unmodified, as your own.
+Do not share this file or as part of other asset packs.
+
+Contact:  
+Email: alnonoka19@gmail.com
+Boosty: https://boosty.to/nonoka
+Reddit: https://www.reddit.com/user/HeronParking9950/
+
+Thank you so much for your support!

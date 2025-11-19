@@ -97,6 +97,22 @@
                 <tiles />
             </object-type>
         </object-folder>
+        <object-folder name="Fase3">
+            <object-type name="SnowMap" sid="786565846523636">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Snowy_Wasteland_Asset_pack\Tileset\Snowy_Wasteland_Asset_pack.png" />
+                <tiles />
+            </object-type>
+            <object-type name="SnowMapCamadaInferior" sid="564145279587041">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Snowy_Wasteland_Asset_pack\Tileset\Snowy_Wasteland_Asset_pack.png" />
+                <tiles />
+            </object-type>
+            <object-type name="TiledBackground" sid="418331281199838">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Snowy_Wasteland_Asset_pack\Backgrounds_png\Background_2.png" />
+            </object-type>
+        </object-folder>
         <object-type name="colisaoChao" sid="152813904528982">
             <plugin id="Tilemap" />
             <behaviors>
@@ -1135,6 +1151,7 @@
     </families>
     <layout-folder>
         <layout>fase1.xml</layout>
+        <layout>fase3.xml</layout>
         <layout>menuPrincipal.xml</layout>
         <layout>fase2.xml</layout>
     </layout-folder>
