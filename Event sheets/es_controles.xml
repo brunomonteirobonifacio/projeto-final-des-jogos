@@ -297,7 +297,7 @@
                                                                     <param id="2" name="Image point">&quot;PosicaoColisaoArma&quot;</param>
                                                                 </action>
                                                                 <action id="-5" name="Set width" sid="986944691365583" type="colisaoArma">
-                                                                    <param id="0" name="Width">colisaoJogador.distanciaHorizontalColisaoArmaAtual</param>
+                                                                    <param id="0" name="Width">colisaoJogador.distanciaHorizontalColisaoArmaAtual + colisaoJogador.ImageWidth</param>
                                                                 </action>
                                                                 <action id="-10" name="Set value" sid="391505774997825" type="colisaoArma">
                                                                     <param id="0" name="Instance variable">jogadorSegurandoUID</param>
@@ -705,20 +705,26 @@
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-12" name="Subtract from" sid="278602961621064" type="colisaoJogador">
-                            <param id="0" name="Instance variable">vida</param>
-                            <param id="1" name="Value">colisaoArma.dano</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="328486610333690" type="colisaoJogador">
-                            <param id="0" name="Instance variable">levandoDano</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action behavior="Platform" id="9" name="Set vector Y" sid="287827421777409" type="colisaoJogador">
-                            <param id="0" name="Vector Y">-250</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
+                        <event-block sid="205873686838780">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="286125296859791" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="278602961621064" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">vida</param>
+                                    <param id="1" name="Value">colisaoArma.dano</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="328486610333690" type="colisaoJogador">
+                                    <param id="0" name="Instance variable">levandoDano</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="287827421777409" type="colisaoJogador">
+                                    <param id="0" name="Vector Y">-250</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="212957287549092">
                             <conditions>
                                 <condition id="7" name="Is mirrored" sid="190801614055164" type="colisaoArma" />
