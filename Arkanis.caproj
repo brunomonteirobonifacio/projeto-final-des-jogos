@@ -50,6 +50,82 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
+        <object-folder name="Fase1">
+            <object-type name="decoracaoCenarioFundo" sid="287618504429938">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497753437400241" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\arena-de-gladiadores-romanos-antigos\a223ad73-261d-463d-9788-090aa3d8e530.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="decoracaoObjetosMapa1" sid="105980327409019">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\craftpix-net-436971-free-top-down-roguelike-game-kit-pixel-art\5Tiled_files\Objects.png" />
+                <tiles />
+            </object-type>
+            <object-type name="decoracaoMapa1" sid="384846597166758">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\craftpix-net-436971-free-top-down-roguelike-game-kit-pixel-art\5Tiled_files\Tileset.png" />
+                <tiles />
+            </object-type>
+        </object-folder>
+        <object-folder name="Fase2">
+            <object-type name="estruturasFase2" sid="766542472212550">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Buildings.png" />
+                <tiles />
+            </object-type>
+            <object-type name="rochasFase2" sid="888766447812473">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Props-Rocks.png" />
+                <tiles />
+            </object-type>
+            <object-type name="arvoresFase2" sid="187814178932707">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Tiles.png" />
+                <tiles />
+            </object-type>
+            <object-type name="folhasFase2" sid="192872302131614">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Tree-Assets.png" />
+                <tiles />
+            </object-type>
+            <object-type name="Tilemap" sid="777846455258097">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Trees\Golden-Tree.png" />
+                <tiles />
+            </object-type>
+            <object-type name="Sprite" sid="290253992887494">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402083069714593" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Background\Background.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Fase3">
+            <object-type name="SnowMap" sid="786565846523636">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Snowy_Wasteland_Asset_pack\Tileset\Snowy_Wasteland_Asset_pack.png" />
+                <tiles />
+            </object-type>
+            <object-type name="SnowMapCamada3" sid="564145279587041">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Snowy_Wasteland_Asset_pack\Tileset\Snowy_Wasteland_Asset_pack.png" />
+                <tiles />
+            </object-type>
+            <object-type name="TiledBackground" sid="418331281199838">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Snowy_Wasteland_Asset_pack\Backgrounds_png\Background_2.png" />
+            </object-type>
+            <object-type name="SnowMapCamada2" sid="743648139117518">
+                <plugin id="Tilemap" />
+                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Snowy_Wasteland_Asset_pack\Tileset\Snowy_Wasteland_Asset_pack.png" />
+                <tiles />
+            </object-type>
+        </object-folder>
         <object-type name="colisaoChao" sid="152813904528982">
             <plugin id="Tilemap" />
             <behaviors>
@@ -1023,24 +1099,6 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\gianl\OneDrive\Área de Trabalho\HUD\BarraVidaAtras.png" />
         </object-type>
-        <object-type name="decoracaoMapa1" sid="384846597166758">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\craftpix-net-436971-free-top-down-roguelike-game-kit-pixel-art\5Tiled_files\Tileset.png" />
-            <tiles />
-        </object-type>
-        <object-type name="decoracaoObjetosMapa1" sid="105980327409019">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\craftpix-net-436971-free-top-down-roguelike-game-kit-pixel-art\5Tiled_files\Objects.png" />
-            <tiles />
-        </object-type>
-        <object-type name="decoracaoCenarioFundo" sid="287618504429938">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497753437400241" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\arena-de-gladiadores-romanos-antigos\a223ad73-261d-463d-9788-090aa3d8e530.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families>
         <family name="colisaoJogador" plugin-id="Sprite" sid="882947211568261">
@@ -1106,6 +1164,7 @@
     </families>
     <layout-folder>
         <layout>fase1.xml</layout>
+        <layout>fase3.xml</layout>
         <layout>menuPrincipal.xml</layout>
         <layout>fase2.xml</layout>
     </layout-folder>
