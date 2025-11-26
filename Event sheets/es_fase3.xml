@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>es_fase1</name>
+    <name>es_fase3</name>
     <events>
         <include>es_controles</include>
-        <event-block sid="317320350617279">
+        <event-block sid="337696552234627">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="610593972137397" type="System" />
+                <condition id="-2" name="On start of layout" sid="219534511269668" type="System" />
             </conditions>
             <actions>
-                <action id="9" name="Preload (by name)" sid="502464652377892" type="Audio">
+                <action id="9" name="Preload (by name)" sid="295977840509588" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;crazy-train-8bit&quot;</param>
                 </action>
-                <action id="7" name="Play (by name)" sid="163925667257588" type="Audio">
+                <action id="7" name="Play (by name)" sid="929579450742114" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;crazy-train-8bit&quot;</param>
                     <param id="3" name="Loop">0</param>
@@ -22,69 +22,69 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="350783748164971">
+        <event-block sid="739429005211383">
             <conditions>
-                <condition id="-3" name="On end of layout" sid="880013817733951" type="System" />
+                <condition id="-3" name="On end of layout" sid="915562337343153" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="405162022596355" type="Audio">
+                <action id="6" name="Stop" sid="200469156479392" type="Audio">
                     <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="650940941557667">
+        <event-block sid="184925951389703">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="108284665724824" type="colisaoJogador">
+                <condition id="-7" name="Compare instance variable" sid="643311288657854" type="colisaoJogador">
                     <param id="0" name="Instance variable">vida</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Set position" sid="866855956440024" type="jogadorVencedor">
+                <action id="-3" name="Set position" sid="876874786881216" type="jogadorVencedor">
                     <param id="0" name="X">433</param>
                     <param id="1" name="Y">123</param>
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="181184270171166">
+                <event-block sid="333822682327776">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="274872542956518" type="colisaoJogador1">
+                        <condition id="-7" name="Compare instance variable" sid="379043719651559" type="colisaoJogador1">
                             <param id="0" name="Instance variable">vida</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="523968547225098" type="jogadorVencedor">
+                        <action id="5" name="Set frame" sid="769680292822531" type="jogadorVencedor">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="642610991414503">
+                <event-block sid="531382750782207">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="687760780285538" type="colisaoJogador2">
+                        <condition id="-7" name="Compare instance variable" sid="225165270883981" type="colisaoJogador2">
                             <param id="0" name="Instance variable">vida</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="433668094056182" type="jogadorVencedor">
+                        <action id="5" name="Set frame" sid="929494700290454" type="jogadorVencedor">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="376522228115546">
+                <event-block sid="377829360360596">
                     <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="109957536003142" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="765783118830220" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="709980422349227" type="System">
+                        <action id="-16" name="Wait" sid="142226910598913" type="System">
                             <param id="0" name="Seconds">2</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="584027454102958" type="System">
-                            <param id="0" name="Layout">fase2</param>
+                        <action id="-2" name="Go to layout" sid="543385278632660" type="System">
+                            <param id="0" name="Layout">menuPrincipal</param>
                         </action>
                     </actions>
                 </event-block>
