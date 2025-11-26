@@ -71,38 +71,20 @@
             </object-type>
         </object-folder>
         <object-folder name="Fase2">
-            <object-type name="estruturasFase2" sid="766542472212550">
+            <object-type name="CaveFase2" sid="391234020499526">
                 <plugin id="Tilemap" />
-                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Buildings.png" />
+                <texture original-source="C:\Users\Admin\Downloads\( D&amp;K ) Caves Tile V.2.png" />
                 <tiles />
             </object-type>
-            <object-type name="rochasFase2" sid="888766447812473">
+            <object-type name="CaveFundoFase2" sid="718406198535720">
                 <plugin id="Tilemap" />
-                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Props-Rocks.png" />
+                <texture original-source="C:\Users\Admin\Downloads\( D&amp;K ) Caves Tile V.2.png" />
                 <tiles />
             </object-type>
-            <object-type name="arvoresFase2" sid="187814178932707">
+            <object-type name="DecoracaoFase2" sid="637178140501283">
                 <plugin id="Tilemap" />
-                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Tiles.png" />
+                <texture original-source="C:\Users\Admin\Downloads\( D&amp;K ) Caves Tile V.2.png" />
                 <tiles />
-            </object-type>
-            <object-type name="folhasFase2" sid="192872302131614">
-                <plugin id="Tilemap" />
-                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Assets\Tree-Assets.png" />
-                <tiles />
-            </object-type>
-            <object-type name="Tilemap" sid="777846455258097">
-                <plugin id="Tilemap" />
-                <texture original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Trees\Golden-Tree.png" />
-                <tiles />
-            </object-type>
-            <object-type name="Sprite" sid="290253992887494">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402083069714593" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Documents\projeto-final-des-jogos\Assets\Legacy-Fantasy - High Forest 2.3\Background\Background.png" />
-                    </animation>
-                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Fase3">
@@ -1164,9 +1146,9 @@
     </families>
     <layout-folder>
         <layout>fase1.xml</layout>
+        <layout>fase2.xml</layout>
         <layout>fase3.xml</layout>
         <layout>menuPrincipal.xml</layout>
-        <layout>fase2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>es_controles.xml</event-sheet>
