@@ -1154,8 +1154,6 @@
         <event-sheet>es_controles.xml</event-sheet>
         <event-sheet>es_fase1.xml</event-sheet>
         <event-sheet>es_menuPrincipal.xml</event-sheet>
-        <event-sheet>es_fase2.xml</event-sheet>
-        <event-sheet>es_fase3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="2" />
@@ -1180,6 +1178,9 @@
         <file name="crazy-train-8bit.ogg" />
         <file name="master-of-puppets-8bit.ogg" />
         <file name="hellraiser-8bit.ogg" />
+        <file name="HitEspada.ogg" />
+        <file name="HitMao.ogg" />
+        <file name="talvezPulo.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
