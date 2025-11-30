@@ -399,7 +399,7 @@
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
                         <dano>25</dano>
-                        <decoracaoUID>20</decoracaoUID>
+                        <decoracaoUID>45</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -472,7 +472,7 @@
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
                         <dano>25</dano>
-                        <decoracaoUID>14</decoracaoUID>
+                        <decoracaoUID>75</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -523,7 +523,7 @@
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
                         <dano>25</dano>
-                        <decoracaoUID>15</decoracaoUID>
+                        <decoracaoUID>77</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -574,7 +574,7 @@
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
                         <dano>25</dano>
-                        <decoracaoUID>18</decoracaoUID>
+                        <decoracaoUID>82</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -625,7 +625,7 @@
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
                         <dano>25</dano>
-                        <decoracaoUID>21</decoracaoUID>
+                        <decoracaoUID>84</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -676,7 +676,7 @@
                         <durabilidade>3</durabilidade>
                         <distanciaHorizontalColisaoArma>72</distanciaHorizontalColisaoArma>
                         <dano>25</dano>
-                        <decoracaoUID>37</decoracaoUID>
+                        <decoracaoUID>86</decoracaoUID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
