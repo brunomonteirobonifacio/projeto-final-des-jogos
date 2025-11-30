@@ -276,6 +276,20 @@
                                                 </action>
                                             </actions>
                                             <sub-events>
+                                                <event-block sid="903929358270659">
+                                                    <conditions>
+                                                        <condition id="-4" name="Trigger once while true" sid="168000389956553" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="7" name="Play (by name)" sid="176214039776583" type="Audio">
+                                                            <param id="0" name="Folder">0</param>
+                                                            <param id="1" name="Audio file name">&quot;hit_&quot; &amp; colisaoJogador.armaAtual</param>
+                                                            <param id="3" name="Loop">0</param>
+                                                            <param id="4" name="Volume">0</param>
+                                                            <param id="2" name="Tag (optional)">&quot;attackSfx&quot;</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
                                                 <comment>TODO: Verificar como fazer a lógica do ataque para não ficar chumbada e poder ser alterada de acordo com a arma e o personagem</comment>
                                                 <event-block sid="301120329706754">
                                                     <conditions>
@@ -375,10 +389,9 @@
                                                         </action>
                                                     </actions>
                                                 </event-block>
-                                                <event-block any="1" sid="934939145154952">
+                                                <event-block sid="934939145154952">
                                                     <conditions>
-                                                        <condition behavior="Platform" id="3" name="Is jumping" sid="140074942201642" type="colisaoJogador" />
-                                                        <condition behavior="Platform" id="4" name="Is falling" sid="292157580439333" type="colisaoJogador" />
+                                                        <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="375004409724515" type="colisaoJogador" />
                                                     </conditions>
                                                     <actions>
                                                         <action id="4" name="Set animation" sid="225485979847094" type="animacaoJogador">
@@ -416,6 +429,21 @@
                                                             </actions>
                                                         </event-block>
                                                     </sub-events>
+                                                </event-block>
+                                                <event-block sid="621577368971038">
+                                                    <conditions>
+                                                        <condition behavior="Platform" id="3" name="Is jumping" sid="438628781534536" type="colisaoJogador" />
+                                                        <condition id="-4" name="Trigger once while true" sid="897959752026080" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="7" name="Play (by name)" sid="845671994328097" type="Audio">
+                                                            <param id="0" name="Folder">0</param>
+                                                            <param id="1" name="Audio file name">&quot;pulo&quot;</param>
+                                                            <param id="3" name="Loop">0</param>
+                                                            <param id="4" name="Volume">-30</param>
+                                                            <param id="2" name="Tag (optional)">&quot;jumpSfx&quot;</param>
+                                                        </action>
+                                                    </actions>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
