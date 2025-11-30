@@ -759,44 +759,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="191263838165732">
-            <conditions>
-                <condition id="-4" name="Trigger once while true" sid="527233601641190" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="567812446949324" type="colisaoJogador">
-                    <param id="0" name="Object">colisaoArma</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">&quot;PosicaoColisaoArma&quot;</param>
-                </action>
-                <action id="-5" name="Set width" sid="739763550851131" type="colisaoArma">
-                    <param id="0" name="Width">colisaoJogador.distanciaHorizontalColisaoArmaAtual + colisaoJogador.ImageWidth</param>
-                </action>
-                <action id="-10" name="Set value" sid="293894756808194" type="colisaoArma">
-                    <param id="0" name="Instance variable">jogadorSegurandoUID</param>
-                    <param id="1" name="Value">colisaoJogador.UID</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="598913396135333" type="colisaoArma">
-                    <param id="0" name="Pin to">colisaoJogador</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action id="-10" name="Set value" sid="635991986577074" type="colisaoArma">
-                    <param id="0" name="Instance variable">dano</param>
-                    <param id="1" name="Value">colisaoJogador.danoArmaAtual</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="919869295379210">
-                    <conditions>
-                        <condition id="7" name="Is mirrored" sid="519029942760917" type="colisaoJogador" />
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="633529245248376" type="colisaoArma">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
     </events>
 </c2eventsheet>
