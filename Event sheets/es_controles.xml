@@ -518,24 +518,6 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="209084824867786">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="841179462624986" type="colisaoJogador">
-                                    <param id="0" name="Instance variable">vida</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="726771479710387" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="726771479710386" type="System">
-                                    <param id="0" name="Seconds">2</param>
-                                </action>
-                                <action id="-2" name="Go to layout" sid="428919834219847" type="System">
-                                    <param id="0" name="Layout">menuPrincipal</param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>

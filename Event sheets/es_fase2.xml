@@ -4,16 +4,16 @@
     <name>es_fase2</name>
     <events>
         <include>es_controles</include>
-        <event-block sid="287029868022469">
+        <event-block sid="922483360801000">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="302422877215501" type="System" />
+                <condition id="-2" name="On start of layout" sid="798001045726458" type="System" />
             </conditions>
             <actions>
-                <action id="9" name="Preload (by name)" sid="172107454474613" type="Audio">
+                <action id="9" name="Preload (by name)" sid="494454527404461" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;master-of-puppets-8bit&quot;</param>
                 </action>
-                <action id="7" name="Play (by name)" sid="854474606456563" type="Audio">
+                <action id="7" name="Play (by name)" sid="536808014116926" type="Audio">
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">&quot;master-of-puppets-8bit&quot;</param>
                     <param id="3" name="Loop">0</param>
@@ -22,68 +22,66 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="266878136061743">
+        <event-block sid="203377441807154">
             <conditions>
-                <condition id="-3" name="On end of layout" sid="770016878835629" type="System" />
+                <condition id="-3" name="On end of layout" sid="923356514267033" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="939133377334325" type="Audio">
+                <action id="6" name="Stop" sid="796250805874964" type="Audio">
                     <param id="0" name="Tag">&quot;backgroundMusic&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="518623242971834">
+        <event-block sid="778614305849040">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="124556082302043" type="colisaoJogador">
+                <condition id="-7" name="Compare instance variable" sid="822972186959105" type="colisaoJogador">
                     <param id="0" name="Instance variable">vida</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Set position" sid="183471673981320" type="jogadorVencedor">
+                <action id="-3" name="Set position" sid="781622084066846" type="jogadorVencedor">
                     <param id="0" name="X">433</param>
                     <param id="1" name="Y">123</param>
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="548226737192331">
+                <event-block sid="576945085027989">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="440024136802627" type="colisaoJogador1">
+                        <condition id="-7" name="Compare instance variable" sid="212710760451946" type="colisaoJogador1">
                             <param id="0" name="Instance variable">vida</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="637938877758225" type="jogadorVencedor">
+                        <action id="5" name="Set frame" sid="282419625813550" type="jogadorVencedor">
                             <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="868004712855500">
+                <event-block sid="736604639076199">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="143892765453445" type="colisaoJogador2">
+                        <condition id="-7" name="Compare instance variable" sid="785793155903606" type="colisaoJogador2">
                             <param id="0" name="Instance variable">vida</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="983809418665086" type="jogadorVencedor">
+                        <action id="5" name="Set frame" sid="343132300926030" type="jogadorVencedor">
                             <param id="0" name="Frame number">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="746304034451560">
-                    <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="237469380723880" type="System" />
-                    </conditions>
+                <event-block sid="517905475135575">
+                    <conditions />
                     <actions>
-                        <action id="-16" name="Wait" sid="463041147758467" type="System">
+                        <action id="-16" name="Wait" sid="853906413716041" type="System">
                             <param id="0" name="Seconds">2</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="565474045991397" type="System">
+                        <action id="-2" name="Go to layout" sid="301864103783659" type="System">
                             <param id="0" name="Layout">fase3</param>
                         </action>
                     </actions>
