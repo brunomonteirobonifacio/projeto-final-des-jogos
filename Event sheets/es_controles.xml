@@ -276,21 +276,29 @@
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block sid="903929358270659">
+                                                <event-block sid="534480572784622">
                                                     <conditions>
-                                                        <condition id="5" inverted="1" name="Is tag playing" sid="168000389956553" type="Audio">
-                                                            <param id="0" name="Tag">&quot;attackSfx_&quot; &amp; colisaoJogador.UID</param>
-                                                        </condition>
+                                                        <condition id="-4" name="Trigger once while true" sid="490758440993359" type="System" />
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="7" name="Play (by name)" sid="176214039776583" type="Audio">
-                                                            <param id="0" name="Folder">0</param>
-                                                            <param id="1" name="Audio file name">&quot;hit_&quot; &amp; colisaoJogador.armaAtual</param>
-                                                            <param id="3" name="Loop">0</param>
-                                                            <param id="4" name="Volume">0</param>
-                                                            <param id="2" name="Tag (optional)">&quot;attackSfx_&quot; &amp; colisaoJogador.UID</param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="903929358270659">
+                                                            <conditions>
+                                                                <condition id="5" inverted="1" name="Is tag playing" sid="168000389956553" type="Audio">
+                                                                    <param id="0" name="Tag">&quot;attackSfx_&quot; &amp; colisaoJogador.UID</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="7" name="Play (by name)" sid="176214039776583" type="Audio">
+                                                                    <param id="0" name="Folder">0</param>
+                                                                    <param id="1" name="Audio file name">&quot;hit_&quot; &amp; colisaoJogador.armaAtual</param>
+                                                                    <param id="3" name="Loop">0</param>
+                                                                    <param id="4" name="Volume">0</param>
+                                                                    <param id="2" name="Tag (optional)">&quot;attackSfx_&quot; &amp; colisaoJogador.UID</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                                 <comment>TODO: Verificar como fazer a lógica do ataque para não ficar chumbada e poder ser alterada de acordo com a arma e o personagem</comment>
                                                 <event-block sid="301120329706754">
@@ -435,19 +443,27 @@
                                                 <event-block sid="621577368971038">
                                                     <conditions>
                                                         <condition behavior="Platform" id="3" name="Is jumping" sid="438628781534536" type="colisaoJogador" />
-                                                        <condition id="5" inverted="1" name="Is tag playing" sid="897959752026080" type="Audio">
-                                                            <param id="0" name="Tag">&quot;jumpSfx_&quot; &amp; colisaoJogador.UID</param>
-                                                        </condition>
+                                                        <condition id="-4" name="Trigger once while true" sid="760824401777613" type="System" />
                                                     </conditions>
-                                                    <actions>
-                                                        <action id="7" name="Play (by name)" sid="616765279750867" type="Audio">
-                                                            <param id="0" name="Folder">0</param>
-                                                            <param id="1" name="Audio file name">&quot;pulo&quot;</param>
-                                                            <param id="3" name="Loop">0</param>
-                                                            <param id="4" name="Volume">-30</param>
-                                                            <param id="2" name="Tag (optional)">&quot;jumpSfx_&quot; &amp; colisaoJogador.UID</param>
-                                                        </action>
-                                                    </actions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="984924917939404">
+                                                            <conditions>
+                                                                <condition id="5" inverted="1" name="Is tag playing" sid="897959752026080" type="Audio">
+                                                                    <param id="0" name="Tag">&quot;jumpSfx_&quot; &amp; colisaoJogador.UID</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="7" name="Play (by name)" sid="616765279750867" type="Audio">
+                                                                    <param id="0" name="Folder">0</param>
+                                                                    <param id="1" name="Audio file name">&quot;pulo&quot;</param>
+                                                                    <param id="3" name="Loop">0</param>
+                                                                    <param id="4" name="Volume">-30</param>
+                                                                    <param id="2" name="Tag (optional)">&quot;jumpSfx_&quot; &amp; colisaoJogador.UID</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
